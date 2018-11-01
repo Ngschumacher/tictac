@@ -1,0 +1,59 @@
+{
+  USE [Game]
+GO
+/****** Object:  Table [dbo].[Game]    Script Date: 01-Nov-18 22:44:22 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Game](
+[id] [int] IDENTITY(1,1) NOT NULL,
+[player1Id] [int] NULL,
+[player2Id] [int] NULL,
+[currentTurn] [int] NULL,
+CONSTRAINT [PK_Game] PRIMARY KEY CLUSTERED
+(
+[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+/****** Object:  Table [dbo].[Move]    Script Date: 01-Nov-18 22:44:22 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Move](
+[id] [int] IDENTITY(1,1) NOT NULL,
+[playerId] [int] NULL,
+[positionVertical] [int] NULL,
+[positionHorisontal] [int] NULL,
+[gameId] [int] NOT NULL,
+CONSTRAINT [PK_Move] PRIMARY KEY CLUSTERED
+(
+[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+/****** Object:  Table [dbo].[User]    Script Date: 01-Nov-18 22:44:22 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[User](
+[id] [int] IDENTITY(1,1) NOT NULL,
+[username] [varchar](50) NULL,
+CONSTRAINT [PK_User] PRIMARY KEY CLUSTERED
+(
+[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+SET ANSI_PADDING OFF
+GO
+
+}

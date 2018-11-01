@@ -33,6 +33,7 @@
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
         </e>
+        <e p="schema.text" t="Include" />
         <e p="Startup.cs" t="Include" />
         <e p="TypeFaster.csproj" t="IncludeRecursive" />
         <e p="wwwroot" t="Include" />
