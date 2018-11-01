@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Folder Include="wwwroot\" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNet.SignalR">
+          <Version>2.4.0-preview2-20181018-02</Version>
+        </PackageReference>
+        <PackageReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
+
+</Project>
