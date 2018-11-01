@@ -12,7 +12,15 @@
         <e p="ChatHub.cs" t="Include" />
         <e p="ConnectionMapping.cs" t="Include" />
         <e p="Controllers" t="Include">
+          <e p="GameController.cs" t="Include" />
           <e p="ValuesController.cs" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="Board.cs" t="Include" />
+          <e p="Game.cs" t="Include" />
+          <e p="GameContext.cs" t="Include" />
+          <e p="move.cs" t="Include" />
+          <e p="User.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
