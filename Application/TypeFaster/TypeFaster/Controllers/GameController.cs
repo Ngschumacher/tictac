@@ -109,8 +109,8 @@ namespace TypeFaster.Controllers
             }
 
 
-
-
+            
+            
 
 
             var board = new Board()
@@ -119,6 +119,50 @@ namespace TypeFaster.Controllers
             };
 
             return Ok(board);
+        }
+        public char getElt(int x, int y) {
+            return elts[3 * y + x];
+        }
+        
+        
+        public bool IswinningMove(Board board)
+        {
+            for (int i = 0; i < 3; i++) {
+                if (getElt(i, 0) != ' ' && 
+                    getElt(i, 0) == getElt(i, 1)  &&  
+                    getElt(i, 1) == getElt(i, 2)) {
+                    ended = true;
+                    return getElt(i, 0);
+                }
+
+                if (getElt(0, i) != ' ' && 
+                    getElt(0, i) == getElt(1, i)  &&  
+                    getElt(1, i) == getElt(2, i)) {
+                    ended = true;
+                    return getElt(0, i);
+                }
+            }
+
+            if (getElt(0, 0) != ' '  &&  
+                getElt(0, 0) == getElt(1, 1)  &&  
+                getElt(1, 1) == getElt(2, 2)) {
+                ended = true;
+                return getElt(0, 0);
+            }
+
+            if (getElt(2, 0) != ' '  &&  
+                getElt(2, 0) == getElt(1, 1)  &&  
+                getElt(1, 1) == getElt(0, 2)) {
+                ended = true;
+                return getElt(2, 0);
+            }
+
+            for (int i = 0; i < 9; i++) {
+                if (elts[i] == ' ')
+                    return ' ';
+            }
+
+            return 'T';
         }
     }
 }

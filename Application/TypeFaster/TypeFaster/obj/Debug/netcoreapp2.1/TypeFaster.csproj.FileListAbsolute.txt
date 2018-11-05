@@ -26,3 +26,17 @@ D:\Git\TypeFaster\Application\TypeFaster\TypeFaster\obj\Debug\netcoreapp2.1\Type
 D:\Git\TypeFaster\Application\TypeFaster\TypeFaster\obj\Debug\netcoreapp2.1\TypeFaster.RazorTargetAssemblyInfo.cache
 D:\Git\TypeFaster\Application\TypeFaster\TypeFaster\obj\Debug\netcoreapp2.1\TypeFaster.dll
 D:\Git\TypeFaster\Application\TypeFaster\TypeFaster\obj\Debug\netcoreapp2.1\TypeFaster.pdb
+D:\git\tictac\Application\TypeFaster\TypeFaster\bin\Debug\netcoreapp2.1\TypeFaster.deps.json
+D:\git\tictac\Application\TypeFaster\TypeFaster\bin\Debug\netcoreapp2.1\TypeFaster.runtimeconfig.json
+D:\git\tictac\Application\TypeFaster\TypeFaster\bin\Debug\netcoreapp2.1\TypeFaster.runtimeconfig.dev.json
+D:\git\tictac\Application\TypeFaster\TypeFaster\bin\Debug\netcoreapp2.1\TypeFaster.dll
+D:\git\tictac\Application\TypeFaster\TypeFaster\bin\Debug\netcoreapp2.1\TypeFaster.pdb
+D:\git\tictac\Application\TypeFaster\TypeFaster\obj\Debug\netcoreapp2.1\TypeFaster.csprojAssemblyReference.cache
+D:\git\tictac\Application\TypeFaster\TypeFaster\obj\Debug\netcoreapp2.1\TypeFaster.csproj.CoreCompileInputs.cache
+D:\git\tictac\Application\TypeFaster\TypeFaster\obj\Debug\netcoreapp2.1\TypeFaster.RazorAssemblyInfo.cache
+D:\git\tictac\Application\TypeFaster\TypeFaster\obj\Debug\netcoreapp2.1\TypeFaster.RazorAssemblyInfo.cs
+D:\git\tictac\Application\TypeFaster\TypeFaster\obj\Debug\netcoreapp2.1\TypeFaster.AssemblyInfoInputs.cache
+D:\git\tictac\Application\TypeFaster\TypeFaster\obj\Debug\netcoreapp2.1\TypeFaster.AssemblyInfo.cs
+D:\git\tictac\Application\TypeFaster\TypeFaster\obj\Debug\netcoreapp2.1\TypeFaster.RazorTargetAssemblyInfo.cache
+D:\git\tictac\Application\TypeFaster\TypeFaster\obj\Debug\netcoreapp2.1\TypeFaster.dll
+D:\git\tictac\Application\TypeFaster\TypeFaster\obj\Debug\netcoreapp2.1\TypeFaster.pdb
