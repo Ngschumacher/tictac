@@ -1,0 +1,9 @@
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.Core\obj\Debug\netcoreapp2.1\TypeFaster.Core.csprojAssemblyReference.cache
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.Core\obj\Debug\netcoreapp2.1\TypeFaster.Core.csproj.CoreCompileInputs.cache
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.Core\obj\Debug\netcoreapp2.1\TypeFaster.Core.AssemblyInfoInputs.cache
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.Core\obj\Debug\netcoreapp2.1\TypeFaster.Core.AssemblyInfo.cs
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.Core\bin\Debug\netcoreapp2.1\TypeFaster.Core.deps.json
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.Core\bin\Debug\netcoreapp2.1\TypeFaster.Core.dll
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.Core\bin\Debug\netcoreapp2.1\TypeFaster.Core.pdb
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.Core\obj\Debug\netcoreapp2.1\TypeFaster.Core.dll
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.Core\obj\Debug\netcoreapp2.1\TypeFaster.Core.pdb

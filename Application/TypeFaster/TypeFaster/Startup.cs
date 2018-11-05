@@ -11,6 +11,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using TypeFaster.Business;
+using TypeFaster.Business.Context;
+using TypeFaster.Business.Interfaces;
 
 namespace TypeFaster
 {
@@ -26,6 +29,9 @@ namespace TypeFaster
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddScoped<IBoardService, BoardService>();
+            services.AddScoped<GameContext>();
+            
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddCors(options =>
             {
@@ -39,6 +45,7 @@ namespace TypeFaster
                     });
             });
             services.AddSignalR();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -61,6 +68,8 @@ namespace TypeFaster
                 routes.MapHub<ChatHub>("/chatHub");
             });
             app.UseMvc();
+            
+            
         }
     }
 }

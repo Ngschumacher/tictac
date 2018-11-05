@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "D:\\git\\tictac\\Application\\TypeFaster\\TypeFaster\\TypeFaster.csproj",
+    "projectUniqueName": "D:\\Git\\TypeFaster\\Application\\TypeFaster\\TypeFaster\\TypeFaster.csproj",
     "projectName": "TypeFaster",
-    "projectPath": "D:\\git\\tictac\\Application\\TypeFaster\\TypeFaster\\TypeFaster.csproj",
-    "outputPath": "D:\\git\\tictac\\Application\\TypeFaster\\TypeFaster\\obj\\",
+    "projectPath": "D:\\Git\\TypeFaster\\Application\\TypeFaster\\TypeFaster\\TypeFaster.csproj",
+    "outputPath": "D:\\Git\\TypeFaster\\Application\\TypeFaster\\TypeFaster\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -14,7 +14,11 @@
     ],
     "frameworks": {
       "netcoreapp2.1": {
-        "projectReferences": {}
+        "projectReferences": {
+          "D:\\Git\\TypeFaster\\Application\\TypeFaster\\TypeFaster.Businesss\\TypeFaster.Businesss.csproj": {
+            "projectPath": "D:\\Git\\TypeFaster\\Application\\TypeFaster\\TypeFaster.Businesss\\TypeFaster.Businesss.csproj"
+          }
+        }
       }
     },
     "warningProperties": {

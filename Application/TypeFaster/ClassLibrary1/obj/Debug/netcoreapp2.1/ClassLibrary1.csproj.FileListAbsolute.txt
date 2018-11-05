@@ -1,0 +1,9 @@
+D:\Git\TypeFaster\Application\TypeFaster\ClassLibrary1\bin\Debug\netcoreapp2.1\ClassLibrary1.deps.json
+D:\Git\TypeFaster\Application\TypeFaster\ClassLibrary1\bin\Debug\netcoreapp2.1\ClassLibrary1.dll
+D:\Git\TypeFaster\Application\TypeFaster\ClassLibrary1\bin\Debug\netcoreapp2.1\ClassLibrary1.pdb
+D:\Git\TypeFaster\Application\TypeFaster\ClassLibrary1\obj\Debug\netcoreapp2.1\ClassLibrary1.csprojAssemblyReference.cache
+D:\Git\TypeFaster\Application\TypeFaster\ClassLibrary1\obj\Debug\netcoreapp2.1\ClassLibrary1.csproj.CoreCompileInputs.cache
+D:\Git\TypeFaster\Application\TypeFaster\ClassLibrary1\obj\Debug\netcoreapp2.1\ClassLibrary1.AssemblyInfoInputs.cache
+D:\Git\TypeFaster\Application\TypeFaster\ClassLibrary1\obj\Debug\netcoreapp2.1\ClassLibrary1.AssemblyInfo.cs
+D:\Git\TypeFaster\Application\TypeFaster\ClassLibrary1\obj\Debug\netcoreapp2.1\ClassLibrary1.dll
+D:\Git\TypeFaster\Application\TypeFaster\ClassLibrary1\obj\Debug\netcoreapp2.1\ClassLibrary1.pdb

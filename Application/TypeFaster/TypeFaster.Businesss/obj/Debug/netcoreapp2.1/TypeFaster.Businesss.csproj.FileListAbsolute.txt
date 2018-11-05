@@ -1,0 +1,12 @@
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.Businesss\obj\Debug\netcoreapp2.1\TypeFaster.Businesss.csprojAssemblyReference.cache
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.Businesss\obj\Debug\netcoreapp2.1\TypeFaster.Businesss.csproj.CoreCompileInputs.cache
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.Businesss\obj\Debug\netcoreapp2.1\TypeFaster.Businesss.AssemblyInfoInputs.cache
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.Businesss\obj\Debug\netcoreapp2.1\TypeFaster.Businesss.AssemblyInfo.cs
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.Businesss\bin\Debug\netcoreapp2.1\TypeFaster.Business.deps.json
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.Businesss\bin\Debug\netcoreapp2.1\TypeFaster.Business.dll
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.Businesss\bin\Debug\netcoreapp2.1\TypeFaster.Business.pdb
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.Businesss\bin\Debug\netcoreapp2.1\TypeFaster.Core.dll
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.Businesss\bin\Debug\netcoreapp2.1\TypeFaster.Core.pdb
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.Businesss\obj\Debug\netcoreapp2.1\TypeFaster.Businesss.csproj.CopyComplete
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.Businesss\obj\Debug\netcoreapp2.1\TypeFaster.Business.dll
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.Businesss\obj\Debug\netcoreapp2.1\TypeFaster.Business.pdb

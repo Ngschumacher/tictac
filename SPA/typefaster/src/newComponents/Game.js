@@ -12,12 +12,8 @@ class Game extends Component {
         super();
 
         this.state = {
-            gameBoard: [
-                ' ', ' ', ' ',
-                ' ', ' ', ' ',
-                ' ', ' ', ' '
-            ],
-            turn: 'x',
+            game : {},
+            gameBoard: [],
             winner: null
         }
     }
@@ -100,6 +96,48 @@ class Game extends Component {
 
     }
 
+    updateBoardAjax(loc, playerId, gameId, move) {
+        gameId = this.state.game.id;
+        playerId =  this.state.game.currentTurn;
+
+        fetch(`http://localhost:5000/api/game/Makemove?gameid=${gameId}&move=${loc}&playerid=${playerId}`)
+        .then(result => {
+            let json = result.json();
+            console.log("data is fetched", json);
+            return json;
+
+        }).then(data => {
+            let playerId =  this.state.game.currentTurn == 
+            this.state.game.player1Id ? 
+                this.state.game.player2Id :
+                this.state.game.player1Id;
+            this.setState({
+                game : data.game,
+                gameBoard : data.board.positions
+            })
+            console.log("next", data);
+
+        })
+    }
+
+
+    componentDidMount() {
+        fetch(`http://localhost:5000/api/game/NewGame`)
+        .then(result => {
+            let json = result.json();
+            console.log("data is fetched", json );
+            return json;
+        
+        }).then( data => {
+            console.log("dat is", data);
+
+            this.setState({
+                game : data.game,
+                gameBoard : data.board.positions
+            });
+        } )
+    }
+
     resetBoard() {
             this.setState({
               
@@ -108,7 +146,6 @@ class Game extends Component {
                 ' ', ' ', ' ',
                 ' ', ' ', ' '
             ],
-            turn: 'x',
             winner: null
             }) 
     }
@@ -128,7 +165,7 @@ class Game extends Component {
                         key={i}
                         loc={i}
                         value={value}
-                        updateBoard={this.updateBoard.bind(this)}
+                        updateBoard={this.updateBoardAjax.bind(this)}
                         turn={this.state.turn}
                         />
                         );

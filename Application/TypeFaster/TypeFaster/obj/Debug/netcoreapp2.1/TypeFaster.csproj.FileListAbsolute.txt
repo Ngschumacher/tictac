@@ -40,3 +40,8 @@ D:\git\tictac\Application\TypeFaster\TypeFaster\obj\Debug\netcoreapp2.1\TypeFast
 D:\git\tictac\Application\TypeFaster\TypeFaster\obj\Debug\netcoreapp2.1\TypeFaster.RazorTargetAssemblyInfo.cache
 D:\git\tictac\Application\TypeFaster\TypeFaster\obj\Debug\netcoreapp2.1\TypeFaster.dll
 D:\git\tictac\Application\TypeFaster\TypeFaster\obj\Debug\netcoreapp2.1\TypeFaster.pdb
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster\bin\Debug\netcoreapp2.1\TypeFaster.Business.dll
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster\bin\Debug\netcoreapp2.1\TypeFaster.Core.dll
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster\bin\Debug\netcoreapp2.1\TypeFaster.Business.pdb
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster\bin\Debug\netcoreapp2.1\TypeFaster.Core.pdb
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster\obj\Debug\netcoreapp2.1\TypeFaster.csproj.CopyComplete
