@@ -48,3 +48,12 @@
 .hidden {
   display: none;
 }
+
+.GameContainer {
+  width: 70%;
+  float: left;
+}
+.ChatContainer {
+  width: 30%;
+  float: right;
+}

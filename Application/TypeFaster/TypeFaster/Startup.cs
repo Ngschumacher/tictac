@@ -14,6 +14,7 @@ using Microsoft.Extensions.Options;
 using TypeFaster.Business;
 using TypeFaster.Business.Context;
 using TypeFaster.Business.Interfaces;
+using TypeFaster.Core.Interfaces;
 
 namespace TypeFaster
 {
@@ -30,6 +31,7 @@ namespace TypeFaster
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<IBoardService, BoardService>();
+            services.AddScoped<IUserService, UserService>();
             services.AddScoped<GameContext>();
             
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);

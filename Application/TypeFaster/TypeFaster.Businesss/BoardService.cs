@@ -43,6 +43,9 @@ namespace TypeFaster.Business
                 _gameContext.Game.Add(game);
 
                 _gameContext.SaveChanges();
+
+                game.Player1 = player1;
+                game.Player2 = player2;
                 return game;
 
             }

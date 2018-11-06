@@ -97,8 +97,13 @@ class Game extends Component {
     }
 
     updateBoardAjax(loc, playerId, gameId, move) {
+        if(this.state.gameEnded)
+        return;
+        
+
         gameId = this.state.game.id;
         playerId =  this.state.game.currentTurn;
+
 
         fetch(`http://localhost:5000/api/game/Makemove?gameid=${gameId}&move=${loc}&playerid=${playerId}`)
         .then(result => {
@@ -115,8 +120,15 @@ class Game extends Component {
                 game : data.game,
                 gameBoard : data.board.positions
             })
-            console.log("next", data);
 
+            if(data.gameEnded){
+                this.setState(
+                    {
+                        winner : data.gameEnded,
+                        winnerName : data.winnerName
+                    }
+                )
+            }
         })
     }
 
@@ -124,13 +136,8 @@ class Game extends Component {
     componentDidMount() {
         fetch(`http://localhost:5000/api/game/NewGame`)
         .then(result => {
-            let json = result.json();
-            console.log("data is fetched", json );
-            return json;
-        
+            return result.json();
         }).then( data => {
-            console.log("dat is", data);
-
             this.setState({
                 game : data.game,
                 gameBoard : data.board.positions
@@ -155,7 +162,7 @@ class Game extends Component {
             <div className="container">
                 <div className="menu">
                     <h1>Tic-Tac-Toe</h1>
-                    <Announcement winner={this.state.winner} />
+                    <Announcement winner={this.state.winner} winnerName={this.state.winnerName} />
                     <ResetButton reset={this.resetBoard.bind(this)}/>
                 </div>
                 

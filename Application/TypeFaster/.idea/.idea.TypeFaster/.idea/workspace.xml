@@ -2,48 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8173d2c-7d5f-4dae-9488-467e5e4bf7ed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/TypeFaster.Businesss/BoardService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TypeFaster.Businesss/Class1.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TypeFaster.Businesss/Context/GameContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TypeFaster.Businesss/GameDecider.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TypeFaster.Businesss/Interfaces/IBaordServices.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TypeFaster.Core/Models/Board.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TypeFaster.Businesss/UserService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TypeFaster.Core/Interfaces/IUserService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TypeFaster/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TypeFaster/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TypeFaster/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TypeFaster/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TypeFaster/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TypeFaster/riderModule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicTac.Business.Test/Class1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicTac.Business.Test/Properties/AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicTac.Business.Test/TicTac.Business.Test.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicTac.Business.Test/obj/Debug/TicTac.Business.Test.csprojAssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicTac.Business/Class1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicTac.Business/Properties/AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicTac.Business/TicTac.Business.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicTac.Core/Class1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicTac.Core/Properties/AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicTac.Core/TicTac.Core.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TypeFaster.Business/Context/GameContext.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TypeFaster.Core/Board.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TypeFaster.sln" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.BusinessTests/obj/Debug/netcoreapp2.1/TypeFaster.BusinessTests.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster.BusinessTests/obj/Debug/netcoreapp2.1/TypeFaster.BusinessTests.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Businesss/BoardService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster.Businesss/BoardService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Businesss/Interfaces/IBaordServices.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster.Core/Interfaces/IBoardServices.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Businesss/bin/Debug/netcoreapp2.1/TypeFaster.Business.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster.Businesss/bin/Debug/netcoreapp2.1/TypeFaster.Business.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Businesss/bin/Debug/netcoreapp2.1/TypeFaster.Business.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster.Businesss/bin/Debug/netcoreapp2.1/TypeFaster.Business.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Businesss/bin/Debug/netcoreapp2.1/TypeFaster.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster.Businesss/bin/Debug/netcoreapp2.1/TypeFaster.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Businesss/bin/Debug/netcoreapp2.1/TypeFaster.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster.Businesss/bin/Debug/netcoreapp2.1/TypeFaster.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Businesss/obj/Debug/netcoreapp2.1/TypeFaster.Business.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster.Businesss/obj/Debug/netcoreapp2.1/TypeFaster.Business.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Businesss/obj/Debug/netcoreapp2.1/TypeFaster.Business.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster.Businesss/obj/Debug/netcoreapp2.1/TypeFaster.Business.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Businesss/obj/Debug/netcoreapp2.1/TypeFaster.Businesss.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster.Businesss/obj/Debug/netcoreapp2.1/TypeFaster.Businesss.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Businesss/obj/Debug/netcoreapp2.1/TypeFaster.Businesss.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster.Businesss/obj/Debug/netcoreapp2.1/TypeFaster.Businesss.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Core/bin/Debug/netcoreapp2.1/TypeFaster.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster.Core/bin/Debug/netcoreapp2.1/TypeFaster.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Core/bin/Debug/netcoreapp2.1/TypeFaster.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster.Core/bin/Debug/netcoreapp2.1/TypeFaster.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Core/obj/Debug/netcoreapp2.1/TypeFaster.Core.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster.Core/obj/Debug/netcoreapp2.1/TypeFaster.Core.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Core/obj/Debug/netcoreapp2.1/TypeFaster.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster.Core/obj/Debug/netcoreapp2.1/TypeFaster.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Core/obj/Debug/netcoreapp2.1/TypeFaster.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster.Core/obj/Debug/netcoreapp2.1/TypeFaster.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/ChatHub.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster/ChatHub.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TypeFaster/Controllers/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster/Controllers/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TypeFaster/Models/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster.Core/Models/Game.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TypeFaster/Models/Move.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster.Core/Models/Move.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TypeFaster/Models/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster.Core/Models/User.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TypeFaster/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TypeFaster/TypeFaster.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster/TypeFaster.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TypeFaster/bin/Debug/netcoreapp2.1/TypeFaster.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster/bin/Debug/netcoreapp2.1/TypeFaster.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/bin/Debug/netcoreapp2.1/TypeFaster.Business.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster/bin/Debug/netcoreapp2.1/TypeFaster.Business.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/bin/Debug/netcoreapp2.1/TypeFaster.Business.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster/bin/Debug/netcoreapp2.1/TypeFaster.Business.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/bin/Debug/netcoreapp2.1/TypeFaster.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster/bin/Debug/netcoreapp2.1/TypeFaster.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/bin/Debug/netcoreapp2.1/TypeFaster.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster/bin/Debug/netcoreapp2.1/TypeFaster.Core.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TypeFaster/bin/Debug/netcoreapp2.1/TypeFaster.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster/bin/Debug/netcoreapp2.1/TypeFaster.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TypeFaster/bin/Debug/netcoreapp2.1/TypeFaster.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster/bin/Debug/netcoreapp2.1/TypeFaster.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TypeFaster/bin/Debug/netcoreapp2.1/TypeFaster.runtimeconfig.dev.json" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster/bin/Debug/netcoreapp2.1/TypeFaster.runtimeconfig.dev.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TypeFaster/obj/Debug/netcoreapp2.1/TypeFaster.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster/obj/Debug/netcoreapp2.1/TypeFaster.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TypeFaster/obj/Debug/netcoreapp2.1/TypeFaster.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster/obj/Debug/netcoreapp2.1/TypeFaster.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TypeFaster/obj/Debug/netcoreapp2.1/TypeFaster.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster/obj/Debug/netcoreapp2.1/TypeFaster.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TypeFaster/obj/Debug/netcoreapp2.1/TypeFaster.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster/obj/Debug/netcoreapp2.1/TypeFaster.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TypeFaster/obj/Debug/netcoreapp2.1/TypeFaster.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster/obj/Debug/netcoreapp2.1/TypeFaster.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TypeFaster/obj/Debug/netcoreapp2.1/TypeFaster.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster/obj/Debug/netcoreapp2.1/TypeFaster.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TypeFaster/obj/TypeFaster.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster/obj/TypeFaster.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TypeFaster/obj/TypeFaster.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster/obj/TypeFaster.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TypeFaster/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TypeFaster/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SPA/typefaster/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../SPA/typefaster/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SPA/typefaster/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../SPA/typefaster/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SPA/typefaster/src/Chat.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SPA/typefaster/src/newComponents/Announcement.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../SPA/typefaster/src/newComponents/Announcement.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../SPA/typefaster/src/newComponents/Game.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../SPA/typefaster/src/newComponents/Game.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,32 +54,33 @@
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.6" value="3" />
           <entry key="project.open.time.7" value="4" />
+          <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="6847" />
+          <entry key="cs" value="8773" />
           <entry key="csproj" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="6847" />
+          <entry key="C#" value="8773" />
           <entry key="Csproj" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="42" />
+          <entry key="cs" value="50" />
           <entry key="csproj" value="3" />
           <entry key="json" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="42" />
+          <entry key="C#" value="50" />
           <entry key="Csproj" value="3" />
           <entry key="JSON" value="1" />
         </counts>
@@ -122,23 +117,113 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TypeFaster/Controllers/GameController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="82" column="36" lean-forward="true" selection-start-line="82" selection-start-column="36" selection-end-line="82" selection-end-column="36" />
+            <state relative-caret-position="150">
+              <caret line="89" column="46" selection-start-line="89" selection-start-column="46" selection-end-line="89" selection-end-column="46" />
               <folding>
-                <marker date="1541456298500" expanded="true" signature="6:415" ph="..." />
-                <marker date="1541456298500" expanded="true" signature="449:2477" ph="{...}" />
-                <marker date="1541456298500" expanded="true" signature="531:2475" ph="{...}" />
-                <marker date="1541456298500" expanded="true" signature="650:712" ph="{...}" />
-                <marker date="1541456298500" expanded="true" signature="788:1293" ph="{...}" />
-                <marker date="1541456298500" expanded="true" signature="850:894" ph="{...}" />
-                <marker date="1541456298500" expanded="true" signature="1050:1142" ph="{...}" />
-                <marker date="1541456298500" expanded="true" signature="1398:2454" ph="{...}" />
-                <marker date="1541456298500" expanded="true" signature="1653:1770" ph="{...}" />
-                <marker date="1541456298500" expanded="true" signature="1802:1881" ph="{...}" />
-                <marker date="1541456298500" expanded="true" signature="2204:2405" ph="{...}" />
+                <marker date="1541539241568" expanded="false" signature="6:515" ph="..." />
+                <marker date="1541539241568" expanded="true" signature="549:3445" ph="{...}" />
+                <marker date="1541539241568" expanded="true" signature="631:3443" ph="{...}" />
+                <marker date="1541539241568" expanded="true" signature="921:1061" ph="{...}" />
+                <marker date="1541539241568" expanded="true" signature="1063:1224" ph="/* [HttpGet(&quot;ChallengePlayer&quot;)] ... */" />
+                <marker date="1541539241568" expanded="true" signature="1308:1353" ph="{...}" />
+                <marker date="1541539241568" expanded="true" signature="1429:1824" ph="{...}" />
+                <marker date="1541539241568" expanded="true" signature="1581:1673" ph="{...}" />
+                <marker date="1541539241568" expanded="true" signature="1929:2985" ph="{...}" />
+                <marker date="1541539241568" expanded="true" signature="2184:2301" ph="{...}" />
+                <marker date="1541539241568" expanded="true" signature="2333:2412" ph="{...}" />
+                <marker date="1541539241568" expanded="true" signature="2735:2936" ph="{...}" />
+                <marker date="1541539241568" expanded="true" signature="2988:3422" ph="/* [HttpGet(&quot;SignIn&quot;)] ... */" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TypeFaster/ChatHub.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="227">
+              <caret line="33" column="25" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="25" />
+              <folding>
+                <marker date="1541540084171" expanded="true" signature="6:204" ph="..." />
+                <marker date="1541540084171" expanded="true" signature="226:2958" ph="{...}" />
+                <marker date="1541540084171" expanded="true" signature="259:2816" ph="{...}" />
+                <marker date="1541540084171" expanded="true" signature="617:719" ph="{...}" />
+                <marker date="1541540084171" expanded="true" signature="804:1273" ph="{...}" />
+                <marker date="1541540084171" expanded="true" signature="1055:1159" ph="{...}" />
+                <marker date="1541540084171" expanded="true" signature="1349:1456" ph="{...}" />
+                <marker date="1541540084171" expanded="true" signature="1537:1697" ph="{...}" />
+                <marker date="1541540084171" expanded="true" signature="1756:2051" ph="{...}" />
+                <marker date="1541540084171" expanded="true" signature="2101:2220" ph="{...}" />
+                <marker date="1541540084171" expanded="true" signature="2291:2558" ph="{...}" />
+                <marker date="1541540084171" expanded="true" signature="2598:2801" ph="{...}" />
+                <marker date="1541540084171" expanded="true" signature="2853:2956" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5322196E-EC4D-4A49-A05F-63EFDE8F0BE4/5a/5984a222/Thread.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="113" column="7" selection-start-line="113" selection-start-column="7" selection-end-line="113" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TypeFaster.Businesss/UserService.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+              <folding>
+                <marker date="1541534488039" expanded="true" signature="6:146" ph="..." />
+                <marker date="1541534488039" expanded="true" signature="177:1246" ph="{...}" />
+                <marker date="1541534488039" expanded="true" signature="223:1244" ph="{...}" />
+                <marker date="1541534488039" expanded="true" signature="282:780" ph="{...}" />
+                <marker date="1541534488039" expanded="true" signature="344:770" ph="{...}" />
+                <marker date="1541534488039" expanded="true" signature="478:685" ph="{...}" />
+                <marker date="1541534488039" expanded="true" signature="555:622" ph="{...}" />
+                <marker date="1541534488039" expanded="true" signature="821:994" ph="{...}" />
+                <marker date="1541534488039" expanded="true" signature="883:984" ph="{...}" />
+                <marker date="1541534488039" expanded="true" signature="1057:1238" ph="{...}" />
+                <marker date="1541534488039" expanded="true" signature="1119:1228" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5322196E-EC4D-4A49-A05F-63EFDE8F0BE4/f1/4e716864/Exception.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TypeFaster/ConnectionMapping.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="236">
+              <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+              <folding>
+                <marker date="1540749301923" expanded="false" signature="6:52" ph="..." />
+                <marker date="1540749301923" expanded="true" signature="74:1924" ph="{...}" />
+                <marker date="1540749301923" expanded="true" signature="114:1922" ph="{...}" />
+                <marker date="1540749301923" expanded="true" signature="267:374" ph="{...}" />
+                <marker date="1540749301923" expanded="true" signature="293:364" ph="{...}" />
+                <marker date="1540749301923" expanded="true" signature="408:519" ph="{...}" />
+                <marker date="1540749301923" expanded="true" signature="572:1038" ph="{...}" />
+                <marker date="1540749301923" expanded="true" signature="742:891" ph="{...}" />
+                <marker date="1540749301923" expanded="true" signature="1096:1333" ph="{...}" />
+                <marker date="1540749301923" expanded="true" signature="1211:1275" ph="{...}" />
+                <marker date="1540749301923" expanded="true" signature="1389:1916" ph="{...}" />
+                <marker date="1540749301923" expanded="true" signature="1559:1623" ph="{...}" />
+                <marker date="1540749301923" expanded="true" signature="1780:1874" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -147,36 +232,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TypeFaster/Startup.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="67" column="47" selection-start-line="67" selection-start-column="47" selection-end-line="67" selection-end-column="47" />
+            <state relative-caret-position="272">
+              <caret line="33" column="56" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="56" />
               <folding>
-                <marker date="1541447389024" expanded="true" signature="6:512" ph="..." />
-                <marker date="1541447389024" expanded="true" signature="572:2282" ph="{...}" />
-                <marker date="1541447389024" expanded="true" signature="599:2280" ph="{...}" />
-                <marker date="1541447389024" expanded="true" signature="658:721" ph="{...}" />
-                <marker date="1541447389024" expanded="true" signature="944:1602" ph="{...}" />
-                <marker date="1541447389024" expanded="true" signature="1206:1554" ph="{...}" />
-                <marker date="1541447389024" expanded="true" signature="1304:1538" ph="{...}" />
-                <marker date="1541447389024" expanded="true" signature="1790:2274" ph="{...}" />
-                <marker date="1541447389024" expanded="true" signature="1837:1914" ph="{...}" />
-                <marker date="1541447389024" expanded="true" signature="1931:1990" ph="{...}" />
-                <marker date="1541447389024" expanded="true" signature="2113:2210" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TypeFaster.Businesss/Context/GameContext.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="22" column="40" lean-forward="true" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
-              <folding>
-                <marker date="1541455416862" expanded="false" signature="6:105" ph="..." />
-                <marker date="1541455416862" expanded="true" signature="144:1229" ph="{...}" />
-                <marker date="1541455416862" expanded="true" signature="201:1227" ph="{...}" />
-                <marker date="1541455416862" expanded="true" signature="449:658" ph="{...}" />
-                <marker date="1541455416862" expanded="true" signature="734:1221" ph="{...}" />
+                <marker date="1541533720072" expanded="true" signature="6:584" ph="..." />
+                <marker date="1541533720072" expanded="true" signature="606:2377" ph="{...}" />
+                <marker date="1541533720072" expanded="true" signature="633:2375" ph="{...}" />
+                <marker date="1541533720072" expanded="true" signature="692:755" ph="{...}" />
+                <marker date="1541533720072" expanded="true" signature="978:1697" ph="{...}" />
+                <marker date="1541533720072" expanded="true" signature="1301:1649" ph="{...}" />
+                <marker date="1541533720072" expanded="true" signature="1399:1633" ph="{...}" />
+                <marker date="1541533720072" expanded="true" signature="1885:2369" ph="{...}" />
+                <marker date="1541533720072" expanded="true" signature="1932:2009" ph="{...}" />
+                <marker date="1541533720072" expanded="true" signature="2026:2085" ph="{...}" />
+                <marker date="1541533720072" expanded="true" signature="2208:2305" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -185,24 +254,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TypeFaster.Businesss/BoardService.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="118" column="28" selection-start-line="118" selection-start-column="28" selection-end-line="118" selection-end-column="28" />
+            <state relative-caret-position="448">
+              <caret line="47" column="39" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
               <folding>
-                <marker date="1541456093964" expanded="false" signature="6:239" ph="..." />
-                <marker date="1541456093964" expanded="true" signature="270:3944" ph="{...}" />
-                <marker date="1541456093964" expanded="true" signature="318:3942" ph="{...}" />
-                <marker date="1541456093964" expanded="true" signature="446:506" ph="{...}" />
-                <marker date="1541456093964" expanded="true" signature="575:1397" ph="{...}" />
-                <marker date="1541456093964" expanded="true" signature="638:1361" ph="{...}" />
-                <marker date="1541456093964" expanded="true" signature="1036:1226" ph="{...}" />
-                <marker date="1541456093964" expanded="true" signature="1472:3301" ph="{...}" />
-                <marker date="1541456093964" expanded="true" signature="1531:1546" ph="{...}" />
-                <marker date="1541456093964" expanded="true" signature="1738:3291" ph="{...}" />
-                <marker date="1541456093964" expanded="true" signature="1947:2041" ph="{...}" />
-                <marker date="1541456093964" expanded="true" signature="2522:2695" ph="{...}" />
-                <marker date="1541456093964" expanded="true" signature="2956:3246" ph="{...}" />
-                <marker date="1541456093964" expanded="true" signature="3346:3935" ph="{...}" />
-                <marker date="1541456093964" expanded="true" signature="3408:3925" ph="{...}" />
+                <marker date="1541540420840" expanded="false" signature="6:239" ph="..." />
+                <marker date="1541540420840" expanded="true" signature="270:4025" ph="{...}" />
+                <marker date="1541540420840" expanded="true" signature="318:4023" ph="{...}" />
+                <marker date="1541540420840" expanded="true" signature="446:506" ph="{...}" />
+                <marker date="1541540420840" expanded="true" signature="575:1478" ph="{...}" />
+                <marker date="1541540420840" expanded="true" signature="638:1442" ph="{...}" />
+                <marker date="1541540420840" expanded="true" signature="1036:1226" ph="{...}" />
+                <marker date="1541540420840" expanded="true" signature="1553:3382" ph="{...}" />
+                <marker date="1541540420840" expanded="true" signature="1612:1627" ph="{...}" />
+                <marker date="1541540420840" expanded="true" signature="1819:3372" ph="{...}" />
+                <marker date="1541540420840" expanded="true" signature="2028:2122" ph="{...}" />
+                <marker date="1541540420840" expanded="true" signature="2603:2776" ph="{...}" />
+                <marker date="1541540420840" expanded="true" signature="3037:3327" ph="{...}" />
+                <marker date="1541540420840" expanded="true" signature="3427:4016" ph="{...}" />
+                <marker date="1541540420840" expanded="true" signature="3489:4006" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -211,10 +280,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TypeFaster.Core/Models/Game.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
+            <state relative-caret-position="272">
               <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
               <folding>
-                <marker date="1541454374832" expanded="true" signature="6:58" ph="..." />
+                <marker date="1541454374832" expanded="false" signature="6:58" ph="..." />
                 <marker date="1541454374832" expanded="true" signature="92:719" ph="{...}" />
                 <marker date="1541454374832" expanded="true" signature="116:462" ph="{...}" />
                 <marker date="1541454374832" expanded="true" signature="494:717" ph="{...}" />
@@ -230,7 +299,6 @@
               <caret line="20" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <marker date="1541445802093" expanded="true" signature="6:67" ph="..." />
-                <marker date="1541445802093" expanded="true" signature="103:3385" ph="{...}" />
                 <marker date="1541445802093" expanded="true" signature="132:3383" ph="{...}" />
                 <marker date="1541445802093" expanded="true" signature="200:588" ph="{...}" />
                 <marker date="1541445802093" expanded="true" signature="258:453" ph="{...}" />
@@ -266,6 +334,10 @@
       <find>HubConfiguration</find>
       <find>ConfigureServices</find>
       <find>container</find>
+      <find>signin</find>
+      <find>GetOrCreateUser</find>
+      <find>sendChallenge</find>
+      <find>userInformation</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -276,9 +348,13 @@
     <setting file="file://$PROJECT_DIR$/TypeFaster/ChatHub.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D4725BBE-6AA7-4874-8576-1A2A780E66BF/d7/98bea610/DbSet`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TypeFaster/ConnectionMapping.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TypeFaster.Businesss/UserService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TypeFaster/Controllers/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TypeFaster.Core/Models/Move.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ClassLibrary1/Class1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5322196E-EC4D-4A49-A05F-63EFDE8F0BE4/5a/5984a222/Thread.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5322196E-EC4D-4A49-A05F-63EFDE8F0BE4/f1/4e716864/Exception.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TypeFaster.Core/Interfaces/IUserService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TypeFaster.Core/Class1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TypeFaster/Startup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TypeFaster/Controllers/ValuesController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -288,7 +364,7 @@
     <setting file="file://$PROJECT_DIR$/TypeFaster/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TypeFaster.Businesss/GameDecider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TypeFaster.BusinessTests/UnitTest1.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TypeFaster.Businesss/Interfaces/IBaordServices.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TypeFaster.Core/Interfaces/IBoardServices.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TypeFaster.Core/Models/User.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TypeFaster.Core/Models/Game.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AC88FF9-9817-4BE7-8F0D-6AB05B5F222B/b8/96b46b9d/ConfigureServicesBuilder.cs" root0="SKIP_HIGHLIGHTING" />
@@ -297,7 +373,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/TypeFaster/ConnectionMapping.cs" />
-        <option value="$PROJECT_DIR$/TypeFaster/ChatHub.cs" />
         <option value="$PROJECT_DIR$/TypeFaster/Models/move.cs" />
         <option value="$PROJECT_DIR$/TypeFaster/Models/User.cs" />
         <option value="$PROJECT_DIR$/TypeFaster/Models/Move.cs" />
@@ -324,13 +399,16 @@
         <option value="$PROJECT_DIR$/TypeFaster.BusinessTests/UnitTest1.cs" />
         <option value="$PROJECT_DIR$/TypeFaster.Businesss/Interfaces/BaordServices.cs" />
         <option value="$PROJECT_DIR$/TypeFaster.Businesss/BaordServices.cs" />
-        <option value="$PROJECT_DIR$/TypeFaster/Startup.cs" />
         <option value="$PROJECT_DIR$/TypeFaster.Core/Models/Board.cs" />
         <option value="$PROJECT_DIR$/TypeFaster.Businesss/Interfaces/IBaordServices.cs" />
         <option value="$PROJECT_DIR$/TypeFaster.Core/Models/Game.cs" />
-        <option value="$PROJECT_DIR$/TypeFaster.Businesss/BoardService.cs" />
         <option value="$PROJECT_DIR$/TypeFaster.Businesss/Context/GameContext.cs" />
+        <option value="$PROJECT_DIR$/TypeFaster/Startup.cs" />
+        <option value="$PROJECT_DIR$/TypeFaster.Businesss/UserService.cs" />
+        <option value="$PROJECT_DIR$/TypeFaster.Core/Interfaces/IUserService.cs" />
         <option value="$PROJECT_DIR$/TypeFaster/Controllers/GameController.cs" />
+        <option value="$PROJECT_DIR$/TypeFaster/ChatHub.cs" />
+        <option value="$PROJECT_DIR$/TypeFaster.Businesss/BoardService.cs" />
       </list>
     </option>
   </component>
@@ -341,7 +419,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
+    <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -378,17 +456,6 @@
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="TypeFaster" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="ClassLibrary1" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="TypeFaster" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="ClassLibrary1" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Dependencies" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="TypeFaster" type="24d0babc:SolutionExplorerModelNode" />
               <item name="TypeFaster" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
@@ -400,18 +467,19 @@
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="TypeFaster" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="TypeFaster.Businesss" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="TypeFaster.Core" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="TypeFaster" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="TypeFaster.Businesss" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="TypeFaster.Core" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Interfaces" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="TypeFaster" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="TypeFaster.BusinessTests" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="TypeFaster.Core" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Models" type="24d0babc:SolutionExplorerModelNode" />
             </path>
           </expand>
           <select />
@@ -428,7 +496,7 @@
     <property name="RiderNuGetCacheManager.AutoClear.http-cache" value="2" />
     <property name="RiderNuGetCacheManager.AutoClear.packages-cache" value="2" />
     <property name="RiderNuGetCacheManager.AutoClear.temp" value="1" />
-    <property name="SearchEverywhereHistoryKey" value="context&#9;FILE&#9;file://D:/Git/TypeFaster/Application/TypeFaster/TypeFaster.Businesss/Context/GameContext.cs&#10;BoardService&#9;FILE&#9;file://D:/Git/TypeFaster/Application/TypeFaster/TypeFaster.Businesss/BoardService.cs&#10;ConfigureServices&#9;null&#9;null&#10;game&#9;FILE&#9;file://D:/Git/TypeFaster/Application/TypeFaster/TypeFaster/Controllers/GameController.cs&#10;GameContext&#9;FILE&#9;file://D:/Git/TypeFaster/Application/TypeFaster/TypeFaster.Business/Context/GameContext.cs&#10;Move&#9;FILE&#9;file://D:/Git/TypeFaster/Application/TypeFaster/TypeFaster/Models/Move.cs" />
+    <property name="SearchEverywhereHistoryKey" value="sendChallenge&#9;null&#9;null&#10;userser&#9;FILE&#9;file://D:/Git/TypeFaster/Application/TypeFaster/TypeFaster.Businesss/UserService.cs&#10;start&#9;FILE&#9;file://D:/Git/TypeFaster/Application/TypeFaster/TypeFaster/Startup.cs&#10;context&#9;FILE&#9;file://D:/Git/TypeFaster/Application/TypeFaster/TypeFaster.Businesss/Context/GameContext.cs&#10;BoardService&#9;FILE&#9;file://D:/Git/TypeFaster/Application/TypeFaster/TypeFaster.Businesss/BoardService.cs&#10;ConfigureServices&#9;null&#9;null&#10;game&#9;FILE&#9;file://D:/Git/TypeFaster/Application/TypeFaster/TypeFaster/Controllers/GameController.cs&#10;GameContext&#9;FILE&#9;file://D:/Git/TypeFaster/Application/TypeFaster/TypeFaster.Business/Context/GameContext.cs&#10;Move&#9;FILE&#9;file://D:/Git/TypeFaster/Application/TypeFaster/TypeFaster/Models/Move.cs" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -507,11 +575,12 @@
       <workItem from="1541443026821" duration="654000" />
       <workItem from="1541443731362" duration="870000" />
       <workItem from="1541444642363" duration="10823000" />
+      <workItem from="1541517433504" duration="16029000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43079000" />
+    <option name="totallyTimeSpent" value="59108000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -523,16 +592,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22100656" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22538294" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Change Signature" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48030636" weight="0.3263965" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.64551425" visible="true" weight="0.40087622" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4726477" weight="0.19605696" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.6345733" visible="true" weight="0.40087622" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946696" weight="0.329718" />
@@ -541,11 +611,11 @@
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Unit Tests" order="12" sideWeight="0.35448578" side_tool="true" visible="true" weight="0.40087622" />
+      <window_info anchor="bottom" id="Unit Tests" order="12" sideWeight="0.3654267" side_tool="true" visible="true" weight="0.40087622" />
       <window_info anchor="bottom" id="REST Client" order="13" sideWeight="0.49946696" weight="0.329718" />
       <window_info anchor="bottom" id="Terminal" order="14" />
       <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" />
-      <window_info anchor="bottom" id="Build" order="16" sideWeight="0.46936542" weight="0.3274918" />
+      <window_info anchor="bottom" id="Build" order="16" sideWeight="0.45076588" weight="0.3274918" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -570,42 +640,29 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/TypeFaster/ChatHub.cs</url>
-          <line>22</line>
+          <line>44</line>
           <properties documentPath="$PROJECT_DIR$/TypeFaster/ChatHub.cs" initialLine="9">
             <startOffsets>
-              <option value="514" />
+              <option value="1372" />
             </startOffsets>
             <endOffsets>
-              <option value="588" />
+              <option value="1446" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/TypeFaster/ChatHub.cs</url>
-          <line>30</line>
+          <line>51</line>
           <properties documentPath="$PROJECT_DIR$/TypeFaster/ChatHub.cs" initialLine="22">
             <startOffsets>
-              <option value="773" />
+              <option value="1573" />
             </startOffsets>
             <endOffsets>
-              <option value="842" />
+              <option value="1642" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/TypeFaster/ChatHub.cs</url>
-          <line>57</line>
-          <properties documentPath="$PROJECT_DIR$/TypeFaster/ChatHub.cs" initialLine="39">
-            <startOffsets>
-              <option value="1468" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1511" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/TypeFaster.BusinessTests/UnitTest1.cs</url>
@@ -626,6 +683,19 @@
           <properties documentPath="$PROJECT_DIR$/TypeFaster.Business/GameDecider.cs" initialLine="21" />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/TypeFaster/Controllers/GameController.cs</url>
+          <line>106</line>
+          <properties documentPath="$PROJECT_DIR$/TypeFaster/Controllers/GameController.cs" initialLine="106">
+            <startOffsets>
+              <option value="3110" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3160" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -637,20 +707,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TypeFaster/ChatHub.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TypeFaster/ConnectionMapping.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TypeFaster/Controllers/ValuesController.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -658,7 +714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5322196E-EC4D-4A49-A05F-63EFDE8F0BE4/5a/5984a222/Thread.cs" />
     <entry file="file://$PROJECT_DIR$/TicTac.Business.Test/Class1.cs" />
     <entry file="file://$PROJECT_DIR$/TicTac.Core/Class1.cs" />
     <entry file="file://$PROJECT_DIR$/TicTac.Business/Class1.cs" />
@@ -710,14 +765,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TypeFaster.Businesss/Class1.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <marker date="1541438823460" expanded="true" signature="44:84" ph="{...}" />
-            <marker date="1541438823460" expanded="true" signature="70:82" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/TypeFaster.Businesss/TypeFaster.Businesss.csproj">
       <provider selected="true" editor-type-id="text-editor">
@@ -736,13 +784,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AC88FF9-9817-4BE7-8F0D-6AB05B5F222B/b8/96b46b9d/ConfigureServicesBuilder.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TypeFaster/TypeFaster.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TypeFaster.Businesss/GameDecider.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TypeFaster.Core/Interfaces/IBoardServices.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TypeFaster.Core/Models/Board.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TypeFaster.Businesss/Context/GameContext.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+          <folding>
+            <marker date="1541455416862" expanded="false" signature="6:105" ph="..." />
+            <marker date="1541455416862" expanded="true" signature="201:1227" ph="{...}" />
+            <marker date="1541455416862" expanded="true" signature="449:658" ph="{...}" />
+            <marker date="1541455416862" expanded="true" signature="734:1221" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TypeFaster.BusinessTests/UnitTest1.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="20" selection-start-line="20" selection-end-line="20" />
           <folding>
             <marker date="1541445802093" expanded="true" signature="6:67" ph="..." />
-            <marker date="1541445802093" expanded="true" signature="103:3385" ph="{...}" />
             <marker date="1541445802093" expanded="true" signature="132:3383" ph="{...}" />
             <marker date="1541445802093" expanded="true" signature="200:588" ph="{...}" />
             <marker date="1541445802093" expanded="true" signature="258:453" ph="{...}" />
@@ -769,66 +864,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AC88FF9-9817-4BE7-8F0D-6AB05B5F222B/b8/96b46b9d/ConfigureServicesBuilder.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TypeFaster/TypeFaster.csproj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TypeFaster.Businesss/GameDecider.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-          <folding>
-            <marker date="1541445528482" expanded="true" signature="6:54" ph="..." />
-            <marker date="1541445528482" expanded="true" signature="85:1465" ph="{...}" />
-            <marker date="1541445528482" expanded="true" signature="116:1463" ph="{...}" />
-            <marker date="1541445528482" expanded="true" signature="249:331" ph="{...}" />
-            <marker date="1541445528482" expanded="true" signature="378:437" ph="{...}" />
-            <marker date="1541445528482" expanded="true" signature="480:1457" ph="{...}" />
-            <marker date="1541445528482" expanded="true" signature="531:992" ph="{...}" />
-            <marker date="1541445528482" expanded="true" signature="702:754" ph="{...}" />
-            <marker date="1541445528482" expanded="true" signature="925:978" ph="{...}" />
-            <marker date="1541445528482" expanded="true" signature="1153:1214" ph="{...}" />
-            <marker date="1541445528482" expanded="true" signature="1375:1420" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TypeFaster/Startup.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="67" column="47" selection-start-line="67" selection-start-column="47" selection-end-line="67" selection-end-column="47" />
+        <state relative-caret-position="272">
+          <caret line="33" column="56" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="56" />
           <folding>
-            <marker date="1541447389024" expanded="true" signature="6:512" ph="..." />
-            <marker date="1541447389024" expanded="true" signature="572:2282" ph="{...}" />
-            <marker date="1541447389024" expanded="true" signature="599:2280" ph="{...}" />
-            <marker date="1541447389024" expanded="true" signature="658:721" ph="{...}" />
-            <marker date="1541447389024" expanded="true" signature="944:1602" ph="{...}" />
-            <marker date="1541447389024" expanded="true" signature="1206:1554" ph="{...}" />
-            <marker date="1541447389024" expanded="true" signature="1304:1538" ph="{...}" />
-            <marker date="1541447389024" expanded="true" signature="1790:2274" ph="{...}" />
-            <marker date="1541447389024" expanded="true" signature="1837:1914" ph="{...}" />
-            <marker date="1541447389024" expanded="true" signature="1931:1990" ph="{...}" />
-            <marker date="1541447389024" expanded="true" signature="2113:2210" ph="{...}" />
+            <marker date="1541533720072" expanded="true" signature="6:584" ph="..." />
+            <marker date="1541533720072" expanded="true" signature="606:2377" ph="{...}" />
+            <marker date="1541533720072" expanded="true" signature="633:2375" ph="{...}" />
+            <marker date="1541533720072" expanded="true" signature="692:755" ph="{...}" />
+            <marker date="1541533720072" expanded="true" signature="978:1697" ph="{...}" />
+            <marker date="1541533720072" expanded="true" signature="1301:1649" ph="{...}" />
+            <marker date="1541533720072" expanded="true" signature="1399:1633" ph="{...}" />
+            <marker date="1541533720072" expanded="true" signature="1885:2369" ph="{...}" />
+            <marker date="1541533720072" expanded="true" signature="1932:2009" ph="{...}" />
+            <marker date="1541533720072" expanded="true" signature="2026:2085" ph="{...}" />
+            <marker date="1541533720072" expanded="true" signature="2208:2305" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TypeFaster/ConnectionMapping.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding>
+            <marker date="1540749301923" expanded="false" signature="6:52" ph="..." />
+            <marker date="1540749301923" expanded="true" signature="74:1924" ph="{...}" />
+            <marker date="1540749301923" expanded="true" signature="114:1922" ph="{...}" />
+            <marker date="1540749301923" expanded="true" signature="267:374" ph="{...}" />
+            <marker date="1540749301923" expanded="true" signature="293:364" ph="{...}" />
+            <marker date="1540749301923" expanded="true" signature="408:519" ph="{...}" />
+            <marker date="1540749301923" expanded="true" signature="572:1038" ph="{...}" />
+            <marker date="1540749301923" expanded="true" signature="742:891" ph="{...}" />
+            <marker date="1540749301923" expanded="true" signature="1096:1333" ph="{...}" />
+            <marker date="1540749301923" expanded="true" signature="1211:1275" ph="{...}" />
+            <marker date="1540749301923" expanded="true" signature="1389:1916" ph="{...}" />
+            <marker date="1540749301923" expanded="true" signature="1559:1623" ph="{...}" />
+            <marker date="1540749301923" expanded="true" signature="1780:1874" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5322196E-EC4D-4A49-A05F-63EFDE8F0BE4/f1/4e716864/Exception.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TypeFaster.Core/Interfaces/IUserService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <marker date="1541534509536" expanded="true" signature="6:58" ph="..." />
+            <marker date="1541534509536" expanded="true" signature="96:275" ph="{...}" />
+            <marker date="1541534509536" expanded="true" signature="132:273" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TypeFaster.Businesss/UserService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+          <folding>
+            <marker date="1541534488039" expanded="true" signature="6:146" ph="..." />
+            <marker date="1541534488039" expanded="true" signature="177:1246" ph="{...}" />
+            <marker date="1541534488039" expanded="true" signature="223:1244" ph="{...}" />
+            <marker date="1541534488039" expanded="true" signature="282:780" ph="{...}" />
+            <marker date="1541534488039" expanded="true" signature="344:770" ph="{...}" />
+            <marker date="1541534488039" expanded="true" signature="478:685" ph="{...}" />
+            <marker date="1541534488039" expanded="true" signature="555:622" ph="{...}" />
+            <marker date="1541534488039" expanded="true" signature="821:994" ph="{...}" />
+            <marker date="1541534488039" expanded="true" signature="883:984" ph="{...}" />
+            <marker date="1541534488039" expanded="true" signature="1057:1238" ph="{...}" />
+            <marker date="1541534488039" expanded="true" signature="1119:1228" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5322196E-EC4D-4A49-A05F-63EFDE8F0BE4/5a/5984a222/Thread.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="113" column="7" selection-start-line="113" selection-start-column="7" selection-end-line="113" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TypeFaster.Core/Models/Game.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
+        <state relative-caret-position="272">
           <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
           <folding>
-            <marker date="1541454374832" expanded="true" signature="6:58" ph="..." />
+            <marker date="1541454374832" expanded="false" signature="6:58" ph="..." />
             <marker date="1541454374832" expanded="true" signature="92:719" ph="{...}" />
             <marker date="1541454374832" expanded="true" signature="116:462" ph="{...}" />
             <marker date="1541454374832" expanded="true" signature="494:717" ph="{...}" />
@@ -836,85 +965,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TypeFaster.Businesss/BoardService.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="118" column="28" selection-start-line="118" selection-start-column="28" selection-end-line="118" selection-end-column="28" />
-          <folding>
-            <marker date="1541456093964" expanded="false" signature="6:239" ph="..." />
-            <marker date="1541456093964" expanded="true" signature="270:3944" ph="{...}" />
-            <marker date="1541456093964" expanded="true" signature="318:3942" ph="{...}" />
-            <marker date="1541456093964" expanded="true" signature="446:506" ph="{...}" />
-            <marker date="1541456093964" expanded="true" signature="575:1397" ph="{...}" />
-            <marker date="1541456093964" expanded="true" signature="638:1361" ph="{...}" />
-            <marker date="1541456093964" expanded="true" signature="1036:1226" ph="{...}" />
-            <marker date="1541456093964" expanded="true" signature="1472:3301" ph="{...}" />
-            <marker date="1541456093964" expanded="true" signature="1531:1546" ph="{...}" />
-            <marker date="1541456093964" expanded="true" signature="1738:3291" ph="{...}" />
-            <marker date="1541456093964" expanded="true" signature="1947:2041" ph="{...}" />
-            <marker date="1541456093964" expanded="true" signature="2522:2695" ph="{...}" />
-            <marker date="1541456093964" expanded="true" signature="2956:3246" ph="{...}" />
-            <marker date="1541456093964" expanded="true" signature="3346:3935" ph="{...}" />
-            <marker date="1541456093964" expanded="true" signature="3408:3925" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TypeFaster.Businesss/Interfaces/IBaordServices.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding>
-            <marker date="1541453250862" expanded="true" signature="6:54" ph="..." />
-            <marker date="1541453250862" expanded="true" signature="96:285" ph="{...}" />
-            <marker date="1541453250862" expanded="true" signature="133:283" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TypeFaster.Core/Models/Board.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding>
-            <marker date="1541449153529" expanded="true" signature="32:387" ph="{...}" />
-            <marker date="1541449153529" expanded="true" signature="57:385" ph="{...}" />
-            <marker date="1541449153529" expanded="true" signature="132:223" ph="{...}" />
-            <marker date="1541449153529" expanded="true" signature="262:379" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TypeFaster.Businesss/Context/GameContext.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="22" column="40" lean-forward="true" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
-          <folding>
-            <marker date="1541455416862" expanded="false" signature="6:105" ph="..." />
-            <marker date="1541455416862" expanded="true" signature="144:1229" ph="{...}" />
-            <marker date="1541455416862" expanded="true" signature="201:1227" ph="{...}" />
-            <marker date="1541455416862" expanded="true" signature="449:658" ph="{...}" />
-            <marker date="1541455416862" expanded="true" signature="734:1221" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TypeFaster/Controllers/GameController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="82" column="36" lean-forward="true" selection-start-line="82" selection-start-column="36" selection-end-line="82" selection-end-column="36" />
+        <state relative-caret-position="150">
+          <caret line="89" column="46" selection-start-line="89" selection-start-column="46" selection-end-line="89" selection-end-column="46" />
           <folding>
-            <marker date="1541456298500" expanded="true" signature="6:415" ph="..." />
-            <marker date="1541456298500" expanded="true" signature="449:2477" ph="{...}" />
-            <marker date="1541456298500" expanded="true" signature="531:2475" ph="{...}" />
-            <marker date="1541456298500" expanded="true" signature="650:712" ph="{...}" />
-            <marker date="1541456298500" expanded="true" signature="788:1293" ph="{...}" />
-            <marker date="1541456298500" expanded="true" signature="850:894" ph="{...}" />
-            <marker date="1541456298500" expanded="true" signature="1050:1142" ph="{...}" />
-            <marker date="1541456298500" expanded="true" signature="1398:2454" ph="{...}" />
-            <marker date="1541456298500" expanded="true" signature="1653:1770" ph="{...}" />
-            <marker date="1541456298500" expanded="true" signature="1802:1881" ph="{...}" />
-            <marker date="1541456298500" expanded="true" signature="2204:2405" ph="{...}" />
+            <marker date="1541539241568" expanded="false" signature="6:515" ph="..." />
+            <marker date="1541539241568" expanded="true" signature="549:3445" ph="{...}" />
+            <marker date="1541539241568" expanded="true" signature="631:3443" ph="{...}" />
+            <marker date="1541539241568" expanded="true" signature="921:1061" ph="{...}" />
+            <marker date="1541539241568" expanded="true" signature="1063:1224" ph="/* [HttpGet(&quot;ChallengePlayer&quot;)] ... */" />
+            <marker date="1541539241568" expanded="true" signature="1308:1353" ph="{...}" />
+            <marker date="1541539241568" expanded="true" signature="1429:1824" ph="{...}" />
+            <marker date="1541539241568" expanded="true" signature="1581:1673" ph="{...}" />
+            <marker date="1541539241568" expanded="true" signature="1929:2985" ph="{...}" />
+            <marker date="1541539241568" expanded="true" signature="2184:2301" ph="{...}" />
+            <marker date="1541539241568" expanded="true" signature="2333:2412" ph="{...}" />
+            <marker date="1541539241568" expanded="true" signature="2735:2936" ph="{...}" />
+            <marker date="1541539241568" expanded="true" signature="2988:3422" ph="/* [HttpGet(&quot;SignIn&quot;)] ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TypeFaster.Businesss/BoardService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="47" column="39" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
+          <folding>
+            <marker date="1541540420840" expanded="false" signature="6:239" ph="..." />
+            <marker date="1541540420840" expanded="true" signature="270:4025" ph="{...}" />
+            <marker date="1541540420840" expanded="true" signature="318:4023" ph="{...}" />
+            <marker date="1541540420840" expanded="true" signature="446:506" ph="{...}" />
+            <marker date="1541540420840" expanded="true" signature="575:1478" ph="{...}" />
+            <marker date="1541540420840" expanded="true" signature="638:1442" ph="{...}" />
+            <marker date="1541540420840" expanded="true" signature="1036:1226" ph="{...}" />
+            <marker date="1541540420840" expanded="true" signature="1553:3382" ph="{...}" />
+            <marker date="1541540420840" expanded="true" signature="1612:1627" ph="{...}" />
+            <marker date="1541540420840" expanded="true" signature="1819:3372" ph="{...}" />
+            <marker date="1541540420840" expanded="true" signature="2028:2122" ph="{...}" />
+            <marker date="1541540420840" expanded="true" signature="2603:2776" ph="{...}" />
+            <marker date="1541540420840" expanded="true" signature="3037:3327" ph="{...}" />
+            <marker date="1541540420840" expanded="true" signature="3427:4016" ph="{...}" />
+            <marker date="1541540420840" expanded="true" signature="3489:4006" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TypeFaster/ChatHub.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="33" column="25" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="25" />
+          <folding>
+            <marker date="1541540084171" expanded="true" signature="6:204" ph="..." />
+            <marker date="1541540084171" expanded="true" signature="226:2958" ph="{...}" />
+            <marker date="1541540084171" expanded="true" signature="259:2816" ph="{...}" />
+            <marker date="1541540084171" expanded="true" signature="617:719" ph="{...}" />
+            <marker date="1541540084171" expanded="true" signature="804:1273" ph="{...}" />
+            <marker date="1541540084171" expanded="true" signature="1055:1159" ph="{...}" />
+            <marker date="1541540084171" expanded="true" signature="1349:1456" ph="{...}" />
+            <marker date="1541540084171" expanded="true" signature="1537:1697" ph="{...}" />
+            <marker date="1541540084171" expanded="true" signature="1756:2051" ph="{...}" />
+            <marker date="1541540084171" expanded="true" signature="2101:2220" ph="{...}" />
+            <marker date="1541540084171" expanded="true" signature="2291:2558" ph="{...}" />
+            <marker date="1541540084171" expanded="true" signature="2598:2801" ph="{...}" />
+            <marker date="1541540084171" expanded="true" signature="2853:2956" ph="{...}" />
           </folding>
         </state>
       </provider>

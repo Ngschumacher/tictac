@@ -2,12 +2,15 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SignalR;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.EntityFrameworkCore.Query.ExpressionTranslators;
 using TypeFaster.Business;
 using TypeFaster.Business.Context;
 using TypeFaster.Business.Interfaces;
+using TypeFaster.Core.Interfaces;
 using TypeFaster.Core.Models;
 using TypeFaster.Models;
 
@@ -16,23 +19,33 @@ namespace TypeFaster.Controllers
     [Route("api/[controller]")]
     public class GameController: ControllerBase
     {
+        private readonly IHubContext<ChatHub> _hubContext;
         private readonly IBoardService _boardService;
+        private readonly IUserService _userService;
 
-        public GameController(IBoardService boardService)
+        public GameController(IHubContext<ChatHub> hubContext, IBoardService boardService, IUserService userService )
         {
+            _hubContext = hubContext;
             _boardService = boardService;
+            _userService = userService;
+        }
+
+//        [HttpGet("ChallengePlayer")]
+//        public ActionResult ChallengePlayer(string challengerId, string opponent)
+//        {
+//            
+//        }
+
+        [HttpGet("AcceptChallenge")]
+        public ActionResult AcceptChallenge()
+        {
+            return null;
         }
         
         [HttpGet("NewGame")]
         public ActionResult NewGame()
         {
-            using (var context = new GameContext())
-            {
-               
-            }
                 var game = _boardService.NewGame(5, 6);
-
-            
             
                 var gameViewModel = new GameViewModel()
                 {
@@ -86,6 +99,21 @@ namespace TypeFaster.Controllers
             };
             return Ok(gameViewModel);
         }
+
+
+//        [HttpGet("SignIn")]
+//        public async Task<ActionResult> SignIn(string username)
+//        {
+//            var user = _userService.GetOrCreateUser(username);
+//
+//            var userIds = ChatHub._connections.GetKeys();
+//
+//            var users = _userService.GetUsers(userIds);
+//            
+//            await _hubContext.Clients.All.SendAsync("connections", users);
+//
+//            return Ok(user);
+//        }
         
      
     }
