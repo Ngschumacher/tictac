@@ -2,16 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8173d2c-7d5f-4dae-9488-467e5e4bf7ed" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TypeFaster/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TypeFaster/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TypeFaster.Businesss/obj/Debug/netcoreapp2.1/TypeFaster.Businesss.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster.Businesss/obj/Debug/netcoreapp2.1/TypeFaster.Businesss.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TypeFaster/ChatHub.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster/ChatHub.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TypeFaster/ConnectionMapping.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster/ConnectionMapping.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TypeFaster/Controllers/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster/Controllers/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TypeFaster/bin/Debug/netcoreapp2.1/TypeFaster.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster/bin/Debug/netcoreapp2.1/TypeFaster.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TypeFaster/bin/Debug/netcoreapp2.1/TypeFaster.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster/bin/Debug/netcoreapp2.1/TypeFaster.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TypeFaster/obj/Debug/netcoreapp2.1/TypeFaster.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster/obj/Debug/netcoreapp2.1/TypeFaster.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TypeFaster/obj/Debug/netcoreapp2.1/TypeFaster.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster/obj/Debug/netcoreapp2.1/TypeFaster.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TypeFaster/obj/Debug/netcoreapp2.1/TypeFaster.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TypeFaster/obj/Debug/netcoreapp2.1/TypeFaster.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../SPA/typefaster/src/newComponents/Chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../SPA/typefaster/src/newComponents/Chat.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -94,8 +84,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TypeFaster/Controllers/GameController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+            <state relative-caret-position="323">
+              <caret line="72" column="14" lean-forward="true" selection-start-line="72" selection-start-column="14" selection-end-line="72" selection-end-column="14" />
               <folding>
                 <marker date="1541714045045" expanded="false" signature="6:533" ph="..." />
                 <marker date="1541714045045" expanded="true" signature="567:4476" ph="{...}" />
@@ -523,7 +513,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64726000" />
+    <option name="totallyTimeSpent" value="65506000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -940,8 +930,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TypeFaster/Controllers/GameController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+        <state relative-caret-position="323">
+          <caret line="72" column="14" lean-forward="true" selection-start-line="72" selection-start-column="14" selection-end-line="72" selection-end-column="14" />
           <folding>
             <marker date="1541714045045" expanded="false" signature="6:533" ph="..." />
             <marker date="1541714045045" expanded="true" signature="567:4476" ph="{...}" />

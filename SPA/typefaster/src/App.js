@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { HubConnectionBuilder } from '@aspnet/signalr';
 
 import Chat from './newComponents/Chat';
 import Game from './newComponents/Game';
@@ -12,9 +13,27 @@ class App extends Component {
     super();
 
     this.state = {
+      hubConnection: null,
       gameInProgress : false,
     }
 }
+componentDidMount = () => {
+  const hubConnection = new HubConnectionBuilder()
+                      .withUrl('http://localhost:5000/chatHub')
+                      .build();
+
+    this.setState({ hubConnection }, () => {
+      this.state.hubConnection
+      .start()
+      .then(() => {
+        console.log('Connection started!');
+      })
+      .catch(err => console.log('Error while establishing connection :(', err));
+    });
+
+    console.log(this.state.hubConnection)
+}
+
 
 startGame(id) {
   console.log("ids", id);
@@ -53,7 +72,7 @@ updateBoard(id) {
          {game}
        </div>
        <div className="ChatContainer">
-        <Chat startGame={this.startGame.bind(this)}/>
+        <Chat hubConnection={this.state.hubConnection.bind(this) }/>
        </div>
        </div>
       </div>

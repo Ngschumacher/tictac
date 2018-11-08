@@ -14,7 +14,7 @@ class Chat extends Component {
       messages: [],
       connectedUsers : [],
       challenges : [],
-      hubConnection: null,
+      hubConnection: this.props.hubConnection,
       gameInProgress : this.props.gameInProgress
     };
   }
@@ -37,6 +37,14 @@ class Chat extends Component {
       nick = "isFirefox";
     }
 
+// fetch(`http://localhost:5000/api/game/SignIn?username=${nick}`)
+//     .then(res => res.json())
+//     .then(
+//       (result) => {
+//         console.log(result);
+//       });
+    
+
     const hubConnection = new HubConnectionBuilder()
                       .withUrl('http://localhost:5000/chatHub')
                       .build();
@@ -54,13 +62,11 @@ class Chat extends Component {
             .catch(err => console.log(err));
         })
         .catch(err => console.log('Error while establishing connection :(', err));
-      });
-
-
       this.state.hubConnection.on('userInformation', (user) => {
         console.log(user);
         this.setState({user : user});
-      });
+      })
+
 
       this.state.hubConnection.on('sendToAll', (nick, receivedMessage) => {
         const text = `${nick}: ${receivedMessage}`;
@@ -81,9 +87,22 @@ class Chat extends Component {
         console.log("challenges", this.state.challenges);
       });
 
-     
-  }
+      this.state.hubConnection.on('gameStarting', (gameModel) => {
+        console.log("game started",gameModel);
+        this.props.startGame(gameModel.gameId);
+        
+      });
 
+      this.state.hubConnection.on('updateBoard', (gameModel) => {
+        console.log("updateBoard",gameModel);
+        this.props.updateBoard(gameModel.gameId);
+        
+      });
+
+    });
+
+     
+  };
 
   sendChallenge(id) {
     let challengerId = this.state.user.id;
