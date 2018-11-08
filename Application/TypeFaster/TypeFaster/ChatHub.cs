@@ -44,7 +44,6 @@ namespace TypeFaster
         {
             await Clients.All.SendAsync("ReceiveMessage", user, message + _userCount);
         }
-        
       
         public async Task sendToAll(string user, string message)
         {
