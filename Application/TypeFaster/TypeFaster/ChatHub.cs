@@ -8,13 +8,18 @@ using TypeFaster.Core.Interfaces;
 
 namespace TypeFaster
 {
+    public static class Users
+    {
+        public static readonly ConnectionMapping<int> Connections = 
+            new ConnectionMapping<int>();
+    }
+    
     public class ChatHub : Hub
     {
         private readonly IBoardService _boardService;
         private readonly IUserService _userService;
 
-        private readonly static ConnectionMapping<int> _connections = 
-            new ConnectionMapping<int>();
+        
 
         private  static  int _userCount = 0;
         
@@ -27,7 +32,7 @@ namespace TypeFaster
         public async Task sendChallenge(int challengerId, int challengedRecieverId)
         {
 
-            var connections = _connections.GetConnections(challengedRecieverId).ToList();
+            var connections = Users.Connections.GetConnections(challengedRecieverId).ToList();
 
             var game = _boardService.NewGame(challengerId, challengedRecieverId);
 
@@ -58,7 +63,7 @@ namespace TypeFaster
 
             var user = _userService.GetOrCreateUser(username);
             
-            _connections.Add(user.Id, Context.ConnectionId);
+            Users.Connections.Add(user.Id, Context.ConnectionId);
 
             await Clients.Client(Context.ConnectionId).SendAsync("userInformation", user);
             
@@ -78,14 +83,14 @@ namespace TypeFaster
 
             string name = Context.User.Identity.Name;
             var user = _userService.GetOrCreateUser(name);
-            _connections.Remove(user.Id, Context.ConnectionId);
+            Users.Connections.Remove(user.Id, Context.ConnectionId);
             
             return base.OnDisconnectedAsync(exception);
         }
 
         public async Task UserChange()
         {
-            var userIds = _connections.GetKeys();
+            var userIds = Users.Connections.GetKeys();
 
             var users = _userService.GetUsers(userIds);
             

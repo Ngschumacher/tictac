@@ -24,6 +24,14 @@ startGame(id) {
   });
 }
 
+updateBoard(id) {
+  console.log("ids", id);
+  this.setState( {
+    gameInProgress : true, 
+    gameId : id
+  });
+}
+
   render() {
     let game;
 

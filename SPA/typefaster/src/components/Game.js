@@ -63,8 +63,6 @@ class Game extends Component {
 
     onClick = () => {
         
-        this.xIsNext =;
-        
         console.log("click");
     }
 

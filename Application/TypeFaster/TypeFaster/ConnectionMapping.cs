@@ -73,5 +73,10 @@ namespace TypeFaster
                 }
             }
         }
+
+        public List<KeyValuePair<T, HashSet<string>>> GetItems(List<T> keys)
+        {
+            return _connections.Where(x => keys.Contains(x.Key)).ToList();
+        }
     }
 }

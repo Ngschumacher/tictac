@@ -37,14 +37,6 @@ class Chat extends Component {
       nick = "isFirefox";
     }
 
-// fetch(`http://localhost:5000/api/game/SignIn?username=${nick}`)
-//     .then(res => res.json())
-//     .then(
-//       (result) => {
-//         console.log(result);
-//       });
-    
-
     const hubConnection = new HubConnectionBuilder()
                       .withUrl('http://localhost:5000/chatHub')
                       .build();
@@ -62,11 +54,13 @@ class Chat extends Component {
             .catch(err => console.log(err));
         })
         .catch(err => console.log('Error while establishing connection :(', err));
+      });
+
+
       this.state.hubConnection.on('userInformation', (user) => {
         console.log(user);
         this.setState({user : user});
-      })
-
+      });
 
       this.state.hubConnection.on('sendToAll', (nick, receivedMessage) => {
         const text = `${nick}: ${receivedMessage}`;
@@ -84,26 +78,30 @@ class Chat extends Component {
       this.state.hubConnection.on('challengeRecieved', (message) => {
         var joined = this.state.challenges.concat(message);
         this.setState({ challenges: joined })
-        console.log(message);
+        console.log("challenges", this.state.challenges);
       });
 
-    });
-
-    
-  };
-
-  sendChallenge(id) {
-    console.log("activated", id);
-    this.state.hubConnection
-        .invoke('sendChallenge',this.state.user.id, id)
-        .catch(err => console.error(err));
+     
   }
 
 
-  acceptChallenge(id) {
-    this.props.startGame(id);
+  sendChallenge(id) {
+    let challengerId = this.state.user.id;
+    let opponentId = id;
 
-    console.log(this.state.gameInProgress);
+    fetch(`http://localhost:5000/api/game/SendChallenge?challengerId=${challengerId}&opponentId=${opponentId}`)
+    .then(result => {
+    })
+  }
+  
+
+  acceptChallenge(id) {
+    console.log("accepting game", id);
+    let accepterId = this.state.user.id;
+    
+    fetch(`http://localhost:5000/api/game/AcceptChallenge?AccepterId=${accepterId}&gameId=${id}`)
+    .then(result => {
+    })
   }
 
   sendMessage = () => {
@@ -135,10 +133,10 @@ class Chat extends Component {
           <div>
             challenges:
             <ul>
-            {this.state.challenges.map(function(user, index) {
+            {this.state.challenges.map(function(game, index) {
                return (
                <li key={ index }>
-                  {user.username} has challenged you - <AcceptChallengeButton id={user.id} onClick={ this.acceptChallenge.bind(this) } />
+                  {game.username} has challenged you - <AcceptChallengeButton id={game.gameId} onClick={ this.acceptChallenge.bind(this) } />
                   
                 </li>
                 );

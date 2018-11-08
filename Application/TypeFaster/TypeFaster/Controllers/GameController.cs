@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -36,10 +37,44 @@ namespace TypeFaster.Controllers
 //            
 //        }
 
-        [HttpGet("AcceptChallenge")]
-        public ActionResult AcceptChallenge()
+        [HttpGet("SendChallenge")]
+        public async Task<IActionResult> SendChallenge(int challengerId, int opponentId)
         {
-            return null;
+
+            var connections = Users.Connections.GetConnections(opponentId).ToList();
+
+            var game = _boardService.NewGame(challengerId, opponentId);
+
+            var challenge = new ChallengeViewModel()
+            {
+                ChallengerName = game.Player2.Username,
+                GameId = game.Id
+            };
+            
+            await _hubContext.Clients.Clients(connections).SendAsync("challengeRecieved", challenge);
+
+            return Ok();
+        }
+
+
+        [HttpGet("AcceptChallenge")]
+        public async Task<IActionResult> AcceptChallenge(int accepterId, int gameId)
+        {
+            var game = _boardService.GetGame(gameId);
+
+            
+            var connections = Users.Connections.GetItems(new List<int>() {game.Player1Id, game.Player2Id })
+                                    .SelectMany(x => x.Value).ToList();
+
+            var gameViewModel = new GameViewModel()
+            {
+                Game = game,
+                Board = new Board()
+            };
+            
+            await _hubContext.Clients.Clients(connections).SendAsync("gameStarting",gameViewModel );
+             
+            return Ok();
         }
         
         [HttpGet("NewGame")]
@@ -97,24 +132,15 @@ namespace TypeFaster.Controllers
                 Winner = game.CurrentTurn,
                 WinnerName = player
             };
+            var connections = Users.Connections.GetItems(new List<int>() {game.Player1Id, game.Player2Id })
+                .SelectMany(x => x.Value).ToList();
+            
+            _hubContext.Clients.Clients(connections).SendAsync("updateBoard", board.Positions);
+
+            
             return Ok(gameViewModel);
         }
 
 
-//        [HttpGet("SignIn")]
-//        public async Task<ActionResult> SignIn(string username)
-//        {
-//            var user = _userService.GetOrCreateUser(username);
-//
-//            var userIds = ChatHub._connections.GetKeys();
-//
-//            var users = _userService.GetUsers(userIds);
-//            
-//            await _hubContext.Clients.All.SendAsync("connections", users);
-//
-//            return Ok(user);
-//        }
-        
-     
     }
 }
