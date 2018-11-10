@@ -14,6 +14,9 @@ class App extends Component {
 
     this.state = {
       hubConnection: null,
+      user : {},
+      connectedUsers : [],
+      challenges : [],
       gameInProgress : false,
     }
 }
@@ -22,16 +25,86 @@ componentDidMount = () => {
                       .withUrl('http://localhost:5000/chatHub')
                       .build();
 
-    this.setState({ hubConnection }, () => {
+    
+  let nick = this.getNick();
+  console.log(nick);
+    this.setState({ hubConnection, nick }, () => {
       this.state.hubConnection
-      .start()
-      .then(() => {
-        console.log('Connection started!');
+        .start()
+        .then(() => {
+          console.log('Connection started!');
+          this.state.hubConnection
+            .invoke('signIn', this.state.nick)
+            .catch(err => console.log(err));
+        })
+        .catch(err => console.log('Error while establishing connection :(', err));
+      
+      
+        this.state.hubConnection.on('userInformation', (user) => {
+        this.setState({user : user});
       })
-      .catch(err => console.log('Error while establishing connection :(', err));
-    });
 
-    console.log(this.state.hubConnection)
+
+      this.state.hubConnection.on('sendToAll', (nick, receivedMessage) => {
+        const text = `${nick}: ${receivedMessage}`;
+        const messages = this.state.messages.concat([text]);
+        this.setState({ messages });
+      });
+
+      this.state.hubConnection.on('connections', (connections) => {
+
+        this.setState({connectedUsers : connections  });
+        
+        console.log(connections);
+      });
+
+      this.state.hubConnection.on('challengeRecieved', (message) => {
+        var joined = this.state.challenges.concat(message);
+        this.setState({ challenges: joined });
+        console.log("challenges", this.state.challenges);
+      });
+
+      this.state.hubConnection.on('updateBoard', (positions) => {
+        console.log("updateBoard",positions);
+        var board = this.state.board;
+        board.positions = positions;
+        this.setState({board : board});
+        // this.props.updateBoard(gameModel.gameId);
+        
+      });
+
+      this.state.hubConnection.on('gameStarting', (gameModel) => {
+        console.log("game started",gameModel);
+        this.setState({
+          game : gameModel.game,
+          board : gameModel.board,
+          gameInProgress : true
+        })
+        // this.props.startGame(gameModel.gameId);
+         
+      });
+
+      // this.state.hubConnection.on('updateBoard', (gameModel) => {
+      //   console.log("updateBoard",gameModel);
+      //   this.props.updateBoard(gameModel.gameId);
+        
+      // });
+
+    });
+   
+    
+
+
+
+    // this.setState({ hubConnection : hubConnection }, () => {
+    //   this.state.hubConnection
+    //   .start()
+    //   .then(() => {
+    //     console.log('Connection started!');
+    //   })
+    //   .catch(err => console.log('Error while establishing connection :(', err));
+    // });
+
 }
 
 
@@ -51,11 +124,24 @@ updateBoard(id) {
   });
 }
 
+acceptChallenge(userId, gameId) {
+  console.log("accepting game", gameId);
+  
+  fetch(`http://localhost:5000/api/game/AcceptChallenge?AccepterId=${userId}&gameId=${gameId}`)
+  .then(result => {
+  })
+}
+
+
   render() {
     let game;
 
     if(this.state.gameInProgress) {
-      game =  <Game />
+      game =  
+      <Game 
+        game={ this.state.game }
+        board={ this.state.board }
+      />
     }
 
 
@@ -72,12 +158,40 @@ updateBoard(id) {
          {game}
        </div>
        <div className="ChatContainer">
-        <Chat hubConnection={this.state.hubConnection.bind(this) }/>
+        <Chat 
+          user={this.state.user}
+          connectedUsers={this.state.connectedUsers}
+          challenges={this.state.challenges}
+          acceptChallenge={this.acceptChallenge.bind(this)} 
+        />
        </div>
        </div>
       </div>
     );
   }
+
+
+
+
+  getNick() {
+    let nick = "John";
+
+    // const nick = window.prompt('Your name:', 'John');
+    var isChrome = !!window.chrome && !!window.chrome.webstore;
+    var isFirefox = typeof InstallTrigger !== 'undefined';
+
+    if(isChrome)
+    {
+      nick = "Chrome user";
+    } 
+    if(isFirefox) 
+    {
+      nick = "isFirefox";
+    }
+
+    return nick;
+  }
+
 }
 
 export default App;

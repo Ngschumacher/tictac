@@ -47,7 +47,7 @@ namespace TypeFaster.Controllers
 
             var challenge = new ChallengeViewModel()
             {
-                ChallengerName = game.Player2.Username,
+                ChallengerName = game.Player1.Username,
                 GameId = game.Id
             };
             

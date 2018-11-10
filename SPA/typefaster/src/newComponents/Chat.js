@@ -6,106 +6,19 @@ import AcceptChallengeButton from './AcceptChallengeButton';
 class Chat extends Component {
   constructor(props) {
     super(props);
-
+    console.log("connectedUsers", this.props.connectedUsers);
     this.state = {
-      nick: '',
-      user: {},
       message: '',
       messages: [],
-      connectedUsers : [],
-      challenges : [],
-      hubConnection: this.props.hubConnection,
-      gameInProgress : this.props.gameInProgress
     };
   }
 
   componentDidMount = () => {
-    
-
-      let nick = "John";
-      
-    // const nick = window.prompt('Your name:', 'John');
-    var isChrome = !!window.chrome && !!window.chrome.webstore;
-    var isFirefox = typeof InstallTrigger !== 'undefined';
-
-    if(isChrome)
-    {
-      nick = "Chrome user";
-    }
-    if(isFirefox) 
-    {
-      nick = "isFirefox";
-    }
-
-// fetch(`http://localhost:5000/api/game/SignIn?username=${nick}`)
-//     .then(res => res.json())
-//     .then(
-//       (result) => {
-//         console.log(result);
-//       });
-    
-
-    const hubConnection = new HubConnectionBuilder()
-                      .withUrl('http://localhost:5000/chatHub')
-                      .build();
-
-
-
-    this.setState({ hubConnection, nick }, () => {
-      this.state.hubConnection
-        .start()
-        .then(() => {
-          console.log('Connection started!');
-
-          this.state.hubConnection
-            .invoke('signIn', this.state.nick)
-            .catch(err => console.log(err));
-        })
-        .catch(err => console.log('Error while establishing connection :(', err));
-      this.state.hubConnection.on('userInformation', (user) => {
-        console.log(user);
-        this.setState({user : user});
-      })
-
-
-      this.state.hubConnection.on('sendToAll', (nick, receivedMessage) => {
-        const text = `${nick}: ${receivedMessage}`;
-        const messages = this.state.messages.concat([text]);
-        this.setState({ messages });
-      });
-
-      this.state.hubConnection.on('connections', (connections) => {
-
-        this.setState({connectedUsers : connections  });
-        
-        console.log(connections);
-      });
-
-      this.state.hubConnection.on('challengeRecieved', (message) => {
-        var joined = this.state.challenges.concat(message);
-        this.setState({ challenges: joined })
-        console.log("challenges", this.state.challenges);
-      });
-
-      this.state.hubConnection.on('gameStarting', (gameModel) => {
-        console.log("game started",gameModel);
-        this.props.startGame(gameModel.gameId);
-        
-      });
-
-      this.state.hubConnection.on('updateBoard', (gameModel) => {
-        console.log("updateBoard",gameModel);
-        this.props.updateBoard(gameModel.gameId);
-        
-      });
-
-    });
-
      
   };
 
   sendChallenge(id) {
-    let challengerId = this.state.user.id;
+    let challengerId = this.props.user.id;
     let opponentId = id;
 
     fetch(`http://localhost:5000/api/game/SendChallenge?challengerId=${challengerId}&opponentId=${opponentId}`)
@@ -114,14 +27,12 @@ class Chat extends Component {
   }
   
 
-  acceptChallenge(id) {
-    console.log("accepting game", id);
-    let accepterId = this.state.user.id;
-    
-    fetch(`http://localhost:5000/api/game/AcceptChallenge?AccepterId=${accepterId}&gameId=${id}`)
-    .then(result => {
-    })
+  aceeptChallengeOnClick(gameId) {
+    console.log("acceptChallenge in chat", gameId);
+
+    this.props.acceptChallenge(this.props.user.id, gameId);
   }
+  
 
   sendMessage = () => {
     this.state.hubConnection
@@ -152,20 +63,20 @@ class Chat extends Component {
           <div>
             challenges:
             <ul>
-            {this.state.challenges.map(function(game, index) {
+            {this.props.challenges.map(function(game, index) {
                return (
                <li key={ index }>
-                  {game.username} has challenged you - <AcceptChallengeButton id={game.gameId} onClick={ this.acceptChallenge.bind(this) } />
+                  {game.challengerName} has challenged you - <AcceptChallengeButton id={game.gameId} onClick={ this.aceeptChallengeOnClick.bind(this) } />
                   
                 </li>
                 );
             }.bind(this))}
             </ul>
           </div>
-          <h3>User list {this.state.user.id}</h3>
+          <h3>User list {this.props.user.id}</h3>
           <ul>
-             {this.state.connectedUsers.map(function(user, index) {
-              if(user.id !== this.state.user.id) {
+             {this.props.connectedUsers.map(function(user, index) {
+              if(user.id !== this.props.user.id) {
                   var challengeButton =  <ChallengeButton id={user.id} onClick={ this.sendChallenge.bind(this) }  />            
               }
                return ( 
