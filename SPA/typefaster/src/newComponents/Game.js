@@ -13,6 +13,7 @@ class Game extends Component {
         super(props);
         console.log(props);
         this.state = {
+            user : props.user,
             game : props.game,
             board : props.board,
             winner: null
@@ -21,14 +22,13 @@ class Game extends Component {
     
 
 
-    updateBoardAjax(loc, playerId) {
+    updateBoardAjax(loc) {
         if(this.state.gameEnded)
         return;
-        console.log(this.props);
-        console.log("gameId", this.props.game.gameId)
-        let gameId = this.state.game.id;
-        playerId =  this.state.game.currentTurn;
 
+        console.log("game", this.props.game)
+        let gameId = this.state.game.id;
+        let playerId =  this.state.user.id;
 
         fetch(`http://localhost:5000/api/game/Makemove?gameid=${gameId}&move=${loc}&playerid=${playerId}`)
         .then(result => {
@@ -36,71 +36,50 @@ class Game extends Component {
             return json;
 
         }).then(data => {
-            console.log("data is fetched", data);
+            // console.log("data is fetched", data);
             
-            let playerId =  this.state.game.currentTurn == 
-            this.state.game.player1Id ? 
-                this.state.game.player2Id :
-                this.state.game.player1Id;
-            this.setState({
-                game : data.game,
-                gameBoard : data.board.positions
-            })
+            // let playerId =  this.state.game.currentTurn == 
+            // this.state.game.player1Id ? 
+            //     this.state.game.player2Id :
+            //     this.state.game.player1Id;
+            // this.setState({
+            //     game : data.game,
+            //     gameBoard : data.board.positions
+            // })
 
-            if(data.gameEnded){
-                this.setState(
-                    {
-                        winner : data.gameEnded,
-                        winnerName : data.winnerName
-                    }
-                )
-            }
+            // if(data.gameEnded){
+            //     this.setState(
+            //         {
+            //             winner : data.gameEnded,
+            //             winnerName : data.winnerName
+            //         }
+            //     )
+            // }
         })
     }
 
-
-    componentDidMount = () => {
-        // fetch(`http://localhost:5000/api/game/NewGame`)
-        // .then(result => {
-        //     return result.json();
-        // }).then( data => {
-        //     this.setState({
-        //         game : data.game,
-        //         gameBoard : data.board.positions
-        //     });
-        // } )
-
-    }
-
-    resetBoard() {
-            this.setState({
-              
-            gameBoard: [
-                ' ', ' ', ' ',
-                ' ', ' ', ' ',
-                ' ', ' ', ' '
-            ],
-            winner: null
-            }) 
-    }
 
     render() {
         return (
             <div className="container">
                 <div className="menu">
                     <h1>Tic-Tac-Toe</h1>
-                    {/* <Announcement winner={this.state.winner} winnerName={this.state.winnerName} /> */}
+                    <Announcement 
+                        user={ this.props.user }
+                        game={ this.props.game } 
+                        gameStatus={ this.props.gameStatus }
+                    />
                     {/* <ResetButton reset={this.resetBoard.bind(this)}/> */}
                 </div>
                 
-                {this.state.board.positions.map(function(value, i) {
+                {this.props.board.positions.map(function(value, i) {
                     return (
                         <Tile 
                         key={i}
                         loc={i}
                         value={value}
                         updateBoard={this.updateBoardAjax.bind(this)}
-                        turn={this.state.turn}
+                        turn={this.props.turn}
                         />
                         );
                 }.bind(this))}

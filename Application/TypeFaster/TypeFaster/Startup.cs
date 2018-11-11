@@ -13,7 +13,6 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using TypeFaster.Business;
 using TypeFaster.Business.Context;
-using TypeFaster.Business.Interfaces;
 using TypeFaster.Core.Interfaces;
 
 namespace TypeFaster

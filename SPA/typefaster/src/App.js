@@ -15,6 +15,9 @@ class App extends Component {
     this.state = {
       hubConnection: null,
       user : {},
+      board : {},
+      game : {},
+      gameStatus : {},
       connectedUsers : [],
       challenges : [],
       gameInProgress : false,
@@ -28,6 +31,19 @@ componentDidMount = () => {
     
   let nick = this.getNick();
   console.log(nick);
+
+  // fetch(`http://localhost:5000/api/account/login?username=${nick}`)
+  //       .then(result => {
+  //           console.log(result);
+  //           let json = result.json();
+  //           return json;
+
+  //       }).then(data => {
+  //           console.log("login", data);
+  //           this.setState({ user : data.user });
+  //       });
+
+
     this.setState({ hubConnection, nick }, () => {
       this.state.hubConnection
         .start()
@@ -64,13 +80,14 @@ componentDidMount = () => {
         console.log("challenges", this.state.challenges);
       });
 
-      this.state.hubConnection.on('updateBoard', (positions) => {
-        console.log("updateBoard",positions);
-        var board = this.state.board;
-        board.positions = positions;
-        this.setState({board : board});
-        // this.props.updateBoard(gameModel.gameId);
-        
+      this.state.hubConnection.on('updateBoard', (gameInformation) => {
+        console.log("updateBoard",gameInformation);
+        this.setState({
+          board : gameInformation.board,
+          game : gameInformation.game,
+          gameStatus : gameInformation.gameStatus,
+        });
+        console.log("state is", this.state);
       });
 
       this.state.hubConnection.on('gameStarting', (gameModel) => {
@@ -80,8 +97,6 @@ componentDidMount = () => {
           board : gameModel.board,
           gameInProgress : true
         })
-        // this.props.startGame(gameModel.gameId);
-         
       });
 
       // this.state.hubConnection.on('updateBoard', (gameModel) => {
@@ -139,8 +154,10 @@ acceptChallenge(userId, gameId) {
     if(this.state.gameInProgress) {
       game =  
       <Game 
+        user={ this.state.user }
         game={ this.state.game }
         board={ this.state.board }
+        gameStatus= { this.state.gameStatus }
       />
     }
 

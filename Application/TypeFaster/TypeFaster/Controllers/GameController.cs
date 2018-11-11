@@ -10,7 +10,6 @@ using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.EntityFrameworkCore.Query.ExpressionTranslators;
 using TypeFaster.Business;
 using TypeFaster.Business.Context;
-using TypeFaster.Business.Interfaces;
 using TypeFaster.Core.Interfaces;
 using TypeFaster.Core.Models;
 using TypeFaster.Models;
@@ -66,7 +65,7 @@ namespace TypeFaster.Controllers
             var connections = Users.Connections.GetItems(new List<int>() {game.Player1Id, game.Player2Id })
                                     .SelectMany(x => x.Value).ToList();
 
-            var gameViewModel = new GameViewModel()
+            var gameViewModel = new GameInformationViewModel()
             {
                 Game = game,
                 Board = new Board()
@@ -82,7 +81,7 @@ namespace TypeFaster.Controllers
         {
                 var game = _boardService.NewGame(5, 6);
             
-                var gameViewModel = new GameViewModel()
+                var gameViewModel = new GameInformationViewModel()
                 {
                     Game = game,
                     Board = new Board()
@@ -117,25 +116,30 @@ namespace TypeFaster.Controllers
             }
 
             var game = _boardService.GetGame(gameId);
-            
-            var gameDecider = new GameDecider(board);
+            //wrong winner
 
            
 
-            var player = game.Player1Id == game.CurrentTurn ? game.Player1.Username : game.Player2.Username;
+            var player = game.Player1Id == game.CurrentTurn ? game.Player1 : game.Player2;
+
+            var ended = gameDecider.Ended;
+            var gameStatus = new GameStatusViewModel()
+            {
+                GameEnded = gameDecider.Ended,
+                Winner = ended ? player : null,
+                
+            };
             
-            var gameViewModel = new GameViewModel()
+            var gameViewModel = new GameInformationViewModel()
             {
                 Game = game,
                 Board = board,
-                GameEnded = gameDecider.Ended,
-                Winner = game.CurrentTurn,
-                WinnerName = player
+                GameStatus = gameStatus
             };
             var connections = Users.Connections.GetItems(new List<int>() {game.Player1Id, game.Player2Id })
                 .SelectMany(x => x.Value).ToList();
             
-            _hubContext.Clients.Clients(connections).SendAsync("updateBoard", board.Positions);
+            _hubContext.Clients.Clients(connections).SendAsync("updateBoard", gameViewModel);
 
             
             return Ok(gameViewModel);

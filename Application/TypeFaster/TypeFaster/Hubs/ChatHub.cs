@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.SignalR;
-using TypeFaster.Business.Interfaces;
 using TypeFaster.Core.Interfaces;
 
 namespace TypeFaster
@@ -61,6 +60,7 @@ namespace TypeFaster
         public async Task SignIn(string username)
         {
 
+            
             var user = _userService.GetOrCreateUser(username);
             
             Users.Connections.Add(user.Id, Context.ConnectionId);

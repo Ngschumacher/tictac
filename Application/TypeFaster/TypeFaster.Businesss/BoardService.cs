@@ -4,7 +4,7 @@ using TypeFaster.Models;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using TypeFaster.Business.Context;
-using TypeFaster.Business.Interfaces;
+using TypeFaster.Core.Interfaces;
 using TypeFaster.Core.Models;
 
 namespace TypeFaster.Business
@@ -79,13 +79,12 @@ namespace TypeFaster.Business
                 var existingMove = moves.Any(x => x.PositionHorisontal == positionHorisontal && x.PositionVertical == positionVertial);
                 if (existingMove)
                     throw new Exception("Position already taken");
-                
+
                 var currentMove = new Move()
                 {
                     GameId = gameId, PlayerId = playerId, PositionHorisontal = positionHorisontal,
                     PositionVertical = positionVertial
                 };
-                game.CurrentTurn = playerId == game.Player1Id ? game.Player2Id : game.Player1Id;
 
                 moves.Add(currentMove);
                 game.Moves = moves;
@@ -98,6 +97,13 @@ namespace TypeFaster.Business
                     
                     board.Positions[boardPosition] = firstPlayer ? 'x' : 'o';
                 }
+                
+                var gameDecider = new GameDecider(board);
+                game.CurrentTurn = playerId == game.Player1Id ? game.Player2Id : game.Player1Id;
+
+                game
+                
+                
 
                 return board;
             }

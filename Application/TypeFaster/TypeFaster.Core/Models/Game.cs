@@ -16,12 +16,17 @@ namespace TypeFaster.Core.Models
         public int CurrentTurn { get; set; }
     }
 
-    public class GameViewModel
+    public class GameInformationViewModel
     {
         public Game Game { get; set; }
         public Board Board { get; set; }
+        public GameStatus GameStatus { get; set; }
+        
+    }
+
+    public class GameStatus
+    {
         public bool GameEnded { get; set; }
-        public int Winner { get; set; }
-        public string WinnerName { get; set; }
+        public User Winner { get; set; }
     }
 }

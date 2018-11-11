@@ -26,6 +26,7 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="ConnectionMapping.cs" t="Include" />
         <e p="Controllers" t="Include">
+          <e p="AccountController.cs" t="Include" />
           <e p="GameController.cs" t="Include" />
           <e p="ValuesController.cs" t="Include" />
         </e>

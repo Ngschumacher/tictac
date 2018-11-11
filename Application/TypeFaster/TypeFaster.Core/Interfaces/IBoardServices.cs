@@ -1,7 +1,6 @@
 using TypeFaster.Core.Models;
-using TypeFaster.Models;
 
-namespace TypeFaster.Business.Interfaces
+namespace TypeFaster.Core.Interfaces
 {
     public interface IBoardService
     {

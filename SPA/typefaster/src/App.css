@@ -49,6 +49,15 @@
   display: none;
 }
 
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+
 .GameContainer {
   width: 70%;
   float: left;
