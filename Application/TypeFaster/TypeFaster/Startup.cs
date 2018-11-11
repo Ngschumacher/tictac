@@ -12,8 +12,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using TypeFaster.Business;
-using TypeFaster.Business.Context;
 using TypeFaster.Core.Interfaces;
+using TypeFaster.DataAccess;
+using TypeFaster.DataAccess.Contexts;
+using TypeFaster.Hubs;
 
 namespace TypeFaster
 {
@@ -29,8 +31,9 @@ namespace TypeFaster
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddScoped<IBoardService, BoardService>();
+            services.AddScoped<IGameService, GameService>();
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IGameRepository, GameRepository>();
             services.AddScoped<GameContext>();
             
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);

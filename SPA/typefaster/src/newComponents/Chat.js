@@ -27,11 +27,7 @@ class Chat extends Component {
   }
   
 
-  aceeptChallengeOnClick(gameId) {
-    console.log("acceptChallenge in chat", gameId);
 
-    this.props.acceptChallenge(this.props.user.id, gameId);
-  }
   
 
   sendMessage = () => {
@@ -60,7 +56,7 @@ class Chat extends Component {
           ))}
         </div>
         <div style={UserListStyle}>
-          <div>
+          {/* <div>
             challenges:
             <ul>
             {this.props.challenges.map(function(game, index) {
@@ -72,7 +68,7 @@ class Chat extends Component {
                 );
             }.bind(this))}
             </ul>
-          </div>
+          </div> */}
           <h3>User list {this.props.user.id}</h3>
           <ul>
              {this.props.connectedUsers.map(function(user, index) {

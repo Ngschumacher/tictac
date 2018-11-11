@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypeFaster.Businesss", "TypeFaster.Businesss\TypeFaster.Businesss.csproj", "{0F4E18EE-C1F7-4D27-A402-A4479AA08083}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypeFaster.DataAccess", "TypeFaster.DataAccess\TypeFaster.DataAccess.csproj", "{8DF08F2E-35B6-4B15-9FEA-9A48CB6D7D40}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{0F4E18EE-C1F7-4D27-A402-A4479AA08083}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F4E18EE-C1F7-4D27-A402-A4479AA08083}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F4E18EE-C1F7-4D27-A402-A4479AA08083}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DF08F2E-35B6-4B15-9FEA-9A48CB6D7D40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DF08F2E-35B6-4B15-9FEA-9A48CB6D7D40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DF08F2E-35B6-4B15-9FEA-9A48CB6D7D40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DF08F2E-35B6-4B15-9FEA-9A48CB6D7D40}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -17,6 +17,9 @@
         "projectReferences": {
           "D:\\Git\\TypeFaster\\Application\\TypeFaster\\TypeFaster.Core\\TypeFaster.Core.csproj": {
             "projectPath": "D:\\Git\\TypeFaster\\Application\\TypeFaster\\TypeFaster.Core\\TypeFaster.Core.csproj"
+          },
+          "D:\\Git\\TypeFaster\\Application\\TypeFaster\\TypeFaster.DataAccess\\TypeFaster.DataAccess.csproj": {
+            "projectPath": "D:\\Git\\TypeFaster\\Application\\TypeFaster\\TypeFaster.DataAccess\\TypeFaster.DataAccess.csproj"
           }
         }
       }

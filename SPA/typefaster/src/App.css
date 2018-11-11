@@ -56,7 +56,9 @@
 .red {
   color: red;
 }
-
+.gray {
+  color: gray;
+}
 
 .GameContainer {
   width: 70%;

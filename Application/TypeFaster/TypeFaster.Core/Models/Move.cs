@@ -1,8 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using TypeFaster.Core.Models;
 
-namespace TypeFaster.Models
+namespace TypeFaster.Core.Models
 {
     public class Move
     {

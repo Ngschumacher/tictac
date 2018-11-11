@@ -4354,7 +4354,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "2.2.0-preview3-35497",
           "System.Linq": "4.3.0",
           "System.Linq.Expressions": "4.3.0",
-          "TypeFaster.Core": "1.0.0"
+          "TypeFaster.Core": "1.0.0",
+          "TypeFaster.DataAccess": "1.0.0"
         },
         "compile": {
           "bin/placeholder/TypeFaster.Business.dll": {}
@@ -4371,6 +4372,20 @@
         },
         "runtime": {
           "bin/placeholder/TypeFaster.Core.dll": {}
+        }
+      },
+      "TypeFaster.DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.2.0-preview3-35497",
+          "TypeFaster.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TypeFaster.DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TypeFaster.DataAccess.dll": {}
         }
       }
     }
@@ -11581,6 +11596,11 @@
       "type": "project",
       "path": "../TypeFaster.Core/TypeFaster.Core.csproj",
       "msbuildProject": "../TypeFaster.Core/TypeFaster.Core.csproj"
+    },
+    "TypeFaster.DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../TypeFaster.DataAccess/TypeFaster.DataAccess.csproj",
+      "msbuildProject": "../TypeFaster.DataAccess/TypeFaster.DataAccess.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -11588,7 +11608,6 @@
       "Microsoft.AspNet.SignalR >= 2.4.0-preview2-20181018-02",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.EntityFrameworkCore >= 2.2.0-preview3-35497",
-      "Microsoft.EntityFrameworkCore.SqlServer >= 2.2.0-preview3-35497",
       "Microsoft.NETCore.App >= 2.1.0",
       "TypeFaster.Business >= 1.0.0"
     ]
@@ -11649,10 +11668,6 @@
             "autoReferenced": true
           },
           "Microsoft.EntityFrameworkCore": {
-            "target": "Package",
-            "version": "[2.2.0-preview3-35497, )"
-          },
-          "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[2.2.0-preview3-35497, )"
           },

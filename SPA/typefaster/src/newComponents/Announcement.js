@@ -12,18 +12,19 @@ class Announcement extends Component {
     render() {
         return (
             <div>
-            <div className={this.props.gameStatus.winner ? 'visible' : 'hidden'}>
-                <h2>Game over  
-                    <span className={this.props.gameStatus.winner && this.props.gameStatus.winner.id == this.props.user.id ? "visible green" : "hidden"  }> You win </span> 
-                    <span className={this.props.gameStatus.winner && this.props.gameStatus.winner.id != this.props.user.id ? "visible red" : "hidden"  }> You loose</span> 
-                </h2>
-                
-            </div>
-            <div className= {this.props.gameStatus.winner ? 'hidden' : 'visible' }>
-            <h3>
-                {this.props.game.currentTurn == this.props.user.id ? 'Make your move' : 'Waiting for opponent'}
-            </h3>
-            </div>
+                <div className={this.props.gameStatus.winner ? 'visible' : 'hidden'}>
+                    <h2>We've found a winner!!</h2>  
+                        <h3 className={this.props.gameStatus.winner && this.props.gameStatus.winner.id == this.props.user.id ? "visible green" : "hidden"  }> You win </h3> 
+                        <h3 className={this.props.gameStatus.winner && this.props.gameStatus.winner.id != this.props.user.id ? "visible red" : "hidden"  }> You loose </h3> 
+                </div>
+                <div className={this.props.gameStatus.gameEnded && !this.props.gameStatus.winner ? 'visible' : 'hidden'}>
+                    ooohhh boy. We've got a tie
+                </div>
+                <div className= {this.props.gameStatus.gameEnded ? 'hidden' : 'visible' }>
+                <h3>
+                    {this.props.game.whosNext.id == this.props.user.id ? 'Make your move' : 'Waiting for opponent'}
+                </h3>
+                </div>
             </div>
             
         );

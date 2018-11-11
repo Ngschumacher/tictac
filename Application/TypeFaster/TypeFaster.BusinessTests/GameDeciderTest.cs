@@ -1,12 +1,13 @@
+using Newtonsoft.Json.Converters;
+using NUnit.Framework;
 using TypeFaster.Core.Models;
 using TypeFaster.Models;
-using Xunit;
 
 namespace TypeFaster.Business.Test
 {
-    public class UnitTest1
+    public class GameDeciderTest
     {
-        [Fact]
+        [Test]
         public void GameDecider_initialBoard()
         {
             var game = new Board()
@@ -26,7 +27,7 @@ namespace TypeFaster.Business.Test
             Assert.False(ended);
         }
         
-        [Fact]
+        [Test]
         public void GameDecider_TwoXInTop()
         {
             var game = new Board()
@@ -46,7 +47,7 @@ namespace TypeFaster.Business.Test
             Assert.False(ended);
         }
         
-        [Fact]
+        [Test]
         public void GameDecider_xTopRow()
         {
             var game = new Board()
@@ -65,7 +66,7 @@ namespace TypeFaster.Business.Test
             Assert.True(ended);
         }
         
-        [Fact]
+        [Test]
         public void GameDecider_oMidRow()
         {
             var game = new Board()
@@ -84,7 +85,7 @@ namespace TypeFaster.Business.Test
             Assert.True(ended);
         }
         
-        [Fact]
+        [Test]
         public void GameDecider_oBotRow()
         {
             var game = new Board()
@@ -103,7 +104,7 @@ namespace TypeFaster.Business.Test
             Assert.True(ended);
         }
         
-        [Fact]
+        [Test]
         public void GameDecider_oCrossLeftTop()
         {
             var game = new Board()
@@ -122,7 +123,7 @@ namespace TypeFaster.Business.Test
             Assert.True(ended);
         }
         
-        [Fact]
+        [Test]
         public void GameDecider_oCrossRightTop()
         {
             var game = new Board()
@@ -139,6 +140,49 @@ namespace TypeFaster.Business.Test
             var ended = decider.Ended;
             
             Assert.True(ended);
+        }
+        
+        [Test]
+        public void GameDecider_allTilesUsed_noWinner()
+        {
+            var game = new Board()
+            {
+                Positions = new char[9]
+                {
+                    'x', 'o', 'o',
+                    'o', 'x', 'x',
+                    'o', 'x', 'o'
+                }
+            };
+
+            var decider = new GameDecider(game);
+            var ended = decider.Ended;
+            var isDraw = decider.IsDraw;
+            
+            Assert.True(ended);
+            Assert.True(isDraw);
+            
+        }
+        
+        [Test]
+        public void GameDecider_allTilesUsed_WithWinner()
+        {
+            var game = new Board()
+            {
+                Positions = new char[9]
+                {
+                    'x', 'o', 'o',
+                    'o', 'x', 'o',
+                    'o', 'x', 'x'
+                }
+            };
+
+            var decider = new GameDecider(game);
+            var ended = decider.Ended;
+            var isDraw = decider.IsDraw;
+            
+            Assert.True(ended);
+            Assert.False(isDraw);
         }
     }
 }

@@ -1,0 +1,12 @@
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.DataAccess\bin\Debug\netcoreapp2.1\TypeFaster.DataAccess.deps.json
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.DataAccess\bin\Debug\netcoreapp2.1\TypeFaster.DataAccess.dll
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.DataAccess\bin\Debug\netcoreapp2.1\TypeFaster.DataAccess.pdb
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.DataAccess\bin\Debug\netcoreapp2.1\TypeFaster.Core.dll
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.DataAccess\bin\Debug\netcoreapp2.1\TypeFaster.Core.pdb
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.DataAccess\obj\Debug\netcoreapp2.1\TypeFaster.DataAccess.csprojAssemblyReference.cache
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.DataAccess\obj\Debug\netcoreapp2.1\TypeFaster.DataAccess.csproj.CoreCompileInputs.cache
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.DataAccess\obj\Debug\netcoreapp2.1\TypeFaster.DataAccess.AssemblyInfoInputs.cache
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.DataAccess\obj\Debug\netcoreapp2.1\TypeFaster.DataAccess.AssemblyInfo.cs
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.DataAccess\obj\Debug\netcoreapp2.1\TypeFaster.DataAccess.csproj.CopyComplete
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.DataAccess\obj\Debug\netcoreapp2.1\TypeFaster.DataAccess.dll
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.DataAccess\obj\Debug\netcoreapp2.1\TypeFaster.DataAccess.pdb

@@ -78,5 +78,10 @@ namespace TypeFaster
         {
             return _connections.Where(x => keys.Contains(x.Key)).ToList();
         }
+
+        public List<KeyValuePair<T, HashSet<string>>> GetAll()
+        {
+            return _connections.ToList();
+        }
     }
 }

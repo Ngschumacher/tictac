@@ -1,82 +1,53 @@
 using System;
+using System.Collections.Generic;
 using System.Data.Entity;
 using TypeFaster.Models;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
-using TypeFaster.Business.Context;
 using TypeFaster.Core.Interfaces;
 using TypeFaster.Core.Models;
+using TypeFaster.DataAccess;
+using TypeFaster.DataAccess.Contexts;
 
 namespace TypeFaster.Business
 {
-    public class BoardService : IBoardService
+    public class GameService : IGameService
     {
-        private readonly GameContext _gameContext;
-        
-        
-        public BoardService(GameContext gameContext)
+        private readonly IGameRepository _gameRepository;
+
+
+        public GameService(IGameRepository gameRepository)
         {
-            _gameContext = gameContext;
+            _gameRepository = gameRepository;
         }
 
-        
-
-        public Game NewGame(int player1Id, int player2Id)
+        public GameModel NewGame(int player1Id, int player2Id)
         {
+            var game = _gameRepository.CreateGame(player1Id, player2Id);
 
-            using (var context = new GameContext())
-            {
-                
-                var  currentUser = context.User.FirstOrDefault(x => x.Id == player1Id);
-                var aiUser = context.User.FirstOrDefault(x => x.Id == player2Id);
-
-                var player1 = currentUser;
-                var player2 = aiUser;
-                
-                Random rnd = new Random();
-                var game = new Game()
-                {
-                    Player1Id = player1.Id,
-                    Player2Id = player2.Id,
-                    CurrentTurn = (rnd.Next(0, 1) == 0) ? player1.Id : player2.Id,
-                };
-                _gameContext.Game.Add(game);
-
-                _gameContext.SaveChanges();
-
-                game.Player1 = player1;
-                game.Player2 = player2;
-                return game;
-
-            }
-
-            return null;
+            return GenerateGameModel(game);
         }
         
-        public Board MakeMove(int gameId, int playerId, int move)
+        public GameModel MakeMove(int gameId, int playerId, int move)
         {
-            var board = new Board()
-            {
-            };
+          
             
             var positionHorisontal = move % 3;
             var positionVertial = (move / 3 - positionHorisontal) + move % 3;
 
-            using (var context = new GameContext())
-            {
-                var game = context.Game.FirstOrDefault(x => x.Id == gameId);
+                var game = _gameRepository.GetGame(gameId);
                 if (game == null)
                     return null;
 
-                if (game.CurrentTurn != playerId)
-                {
+                var currentTurnUser = CurrentTurnUser(game);
+                
+                if (currentTurnUser.Id != playerId)
                     throw new Exception("Not your turn");
-                }
+                
 
                 //couldn't get moves out from the game, so retrieving it here. 
-                var moves = context.Move.Where(m => m.GameId == game.Id).ToList();
 
-                var existingMove = moves.Any(x => x.PositionHorisontal == positionHorisontal && x.PositionVertical == positionVertial);
+                var existingMove = game.Moves.Any(x => x.PositionHorisontal == positionHorisontal && x.PositionVertical == positionVertial);
                 if (existingMove)
                     throw new Exception("Position already taken");
 
@@ -86,48 +57,114 @@ namespace TypeFaster.Business
                     PositionVertical = positionVertial
                 };
 
-                moves.Add(currentMove);
-                game.Moves = moves;
-                context.SaveChanges();
+                game.Moves.Add(currentMove);
+                _gameRepository.SaveGame(game);
 
-                foreach (var m in game.Moves)
+                var gameModel = GenerateGameModel(game);
+
+                return gameModel;
+        }
+
+        public GameModel GetGame(int gameId)
+        {
+            var game = _gameRepository.GetGame(gameId);
+            if (game == null)
+                return null;
+
+            return GenerateGameModel(game);
+        }
+
+        public List<GameStats> GetStatsVersusOpponent(int userId, int opponentId)
+        {
+            List<Game> games = _gameRepository.GetGamesVersusOpponenet(userId, opponentId);
+            List<GameStats> stats = new List<GameStats>();
+            
+            
+            foreach (var game in games)
+            {
+                var board = GenerateBoard(game);
+                var gameDecider = new GameDecider(board);
+                User winner = null;
+
+                if (gameDecider.Ended && !gameDecider.IsDraw)
                 {
-                    var boardPosition = m.PositionVertical * 3 + m.PositionHorisontal;
-                    var firstPlayer = m.PlayerId == game.Player1Id;
-                    
-                    board.Positions[boardPosition] = firstPlayer ? 'x' : 'o';
+                    winner = game.Moves.Last().PlayerId == game.Player1.Id ? game.Player1 : game.Player2;
                 }
                 
-                var gameDecider = new GameDecider(board);
-                game.CurrentTurn = playerId == game.Player1Id ? game.Player2Id : game.Player1Id;
-
-                game
-                
-                
-
-                return board;
+                var stat = new GameStats()
+                {
+                    Id = game.Id,
+                    Player1 = game.Player1,
+                    Player2 = game.Player2,
+                    Winner = winner,
+                    Ended = gameDecider.Ended
+                };
+                stats.Add(stat);    
             }
+
+            return stats;
+        }
+
+
+        private GameModel GenerateGameModel(Game game)
+        {
+            var board = GenerateBoard(game);
+            
+                
+            var gameDecider = new GameDecider(board);
+
+            var whosNext = CurrentTurnUser(game);
+
+            var gameStatus = new GameStatus();
+            if (gameDecider.Ended) {
+                gameStatus.GameEnded = gameDecider.Ended;
+
+                if (!gameDecider.IsDraw)
+                {
+                    var winner = whosNext == game.Player1 ? game.Player2 : game.Player1;
+                    gameStatus.Winner = winner;
+                }
+            }
+            GameModel gameModel = new GameModel()
+            {
+                Id = game.Id,
+                Player1 =  game.Player1,
+                Player2 =  game.Player2,
+                WhosNext = whosNext,
+                Board = board,
+                GameStatus = gameStatus
+            };
+
+            return gameModel;
         }
         
-        public Game GetGame(int id)
+        private Board GenerateBoard(Game game)
         {
-            using (var context = new GameContext())
+            var board = new Board();
+            
+            foreach (var m in game.Moves)
             {
-                var game =  _gameContext.Game
-                    .Include(g => g.Player1)
-                    .Include(g => g.Player2)
-                    .FirstOrDefault(x => x.Id == id);
-
-                var player1 = _gameContext.User.FirstOrDefault(x => x.Id == game.Player1Id);
-                var player2 = _gameContext.User.FirstOrDefault(x => x.Id == game.Player2Id);
-
-                game.Player1 = player1;
-                game.Player2 = player2;
-
-
-                return game;
+                var boardPosition = m.PositionVertical * 3 + m.PositionHorisontal;
+                var firstPlayer = m.PlayerId.Equals(game.Player1.Id);
+                    
+                board.Positions[boardPosition] = firstPlayer ? 'x' : 'o';
             }
+
+            return board;
         }
+
+        private User CurrentTurnUser(Game game)
+        {
+            var startingPlayerId = game.StartingPlayerId;
+            var startingPlayer = startingPlayerId == game.Player1.Id ? game.Player1 : game.Player2;
+            var notStartingPlayer = startingPlayerId != game.Player1.Id ? game.Player1 : game.Player2;
+            
+            var whosNext = game.Moves.Count % 2 == 0 ? startingPlayer : notStartingPlayer;
+
+            return whosNext;
+        }
+        
+        
 
     }
 }

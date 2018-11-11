@@ -44,10 +44,6 @@
           "target": "Package",
           "version": "[2.2.0-preview3-35497, )"
         },
-        "Microsoft.EntityFrameworkCore.SqlServer": {
-          "target": "Package",
-          "version": "[2.2.0-preview3-35497, )"
-        },
         "Microsoft.NETCore.App": {
           "suppressParent": "All",
           "target": "Package",

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 class Tile extends Component {
     tileClick(props) {
+        console.log("tile click");
         props.updateBoard(props.loc, props.turn);
     } 
 

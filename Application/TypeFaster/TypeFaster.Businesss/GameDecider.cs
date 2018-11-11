@@ -1,3 +1,4 @@
+using System.Linq;
 using TypeFaster.Core.Models;
 using TypeFaster.Models;
 
@@ -7,17 +8,19 @@ namespace TypeFaster.Business
     {
         private Board _board;
         public bool Ended { get; private set; }
+        public bool IsDraw { get; private set; }
         
         public GameDecider(Board board)
         {
             _board = board;
-            Ended = GameStatus();
+            IsDraw = !board.Positions.Any(x => x.Equals(' '));
+            Ended = HasWinner() || IsDraw;
         }
         private char GetElement(int x, int y) {
             return _board.Positions[3 * y + x];
         }
         
-        private bool GameStatus()
+        private bool HasWinner()
         {
             for (int i = 0; i < 3; i++) {
                 if (GetElement(i, 0) != ' ' && 

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using TypeFaster.Core.Models;
 using TypeFaster.Models;
 
-namespace TypeFaster.Business.Context
+namespace TypeFaster.DataAccess.Contexts
  {
     public class GameContext : DbContext, IDisposable
     {

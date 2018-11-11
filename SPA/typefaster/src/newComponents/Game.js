@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 // import  Cell from './Cell';
 import { HubConnectionBuilder } from '@aspnet/signalr';
 import Announcement from './Announcement';
-import ResetButton from './ResetButton';
+import Button from './Button';
 import Tile from './Tile';
 
 
@@ -11,51 +11,31 @@ import Tile from './Tile';
 class Game extends Component {
     constructor(props) {
         super(props);
-        console.log(props);
+        console.log("game component props", props);
         this.state = {
-            user : props.user,
-            game : props.game,
-            board : props.board,
-            winner: null
+            gameEnded: false
         }
     }
     
 
 
     updateBoardAjax(loc) {
-        if(this.state.gameEnded)
+        if(this.props.gameStatus.gameEnded)
         return;
 
         console.log("game", this.props.game)
-        let gameId = this.state.game.id;
-        let playerId =  this.state.user.id;
+        let gameId = this.props.game.id;
+        let playerId =  this.props.user.id;
 
-        fetch(`http://localhost:5000/api/game/Makemove?gameid=${gameId}&move=${loc}&playerid=${playerId}`)
+        fetch(`http://localhost:5000/api/game/makemove?gameid=${gameId}&move=${loc}&playerid=${playerId}`)
         .then(result => {
             let json = result.json();
             return json;
-
-        }).then(data => {
-            // console.log("data is fetched", data);
-            
-            // let playerId =  this.state.game.currentTurn == 
-            // this.state.game.player1Id ? 
-            //     this.state.game.player2Id :
-            //     this.state.game.player1Id;
-            // this.setState({
-            //     game : data.game,
-            //     gameBoard : data.board.positions
-            // })
-
-            // if(data.gameEnded){
-            //     this.setState(
-            //         {
-            //             winner : data.gameEnded,
-            //             winnerName : data.winnerName
-            //         }
-            //     )
-            // }
         })
+    }
+
+    showStats() {
+        this.setState({gameEnded : false })
     }
 
 
@@ -69,17 +49,20 @@ class Game extends Component {
                         game={ this.props.game } 
                         gameStatus={ this.props.gameStatus }
                     />
-                    {/* <ResetButton reset={this.resetBoard.bind(this)}/> */}
                 </div>
-                
+                <div className={this.props.game.gameStatus.gameEnded ? 'visible' : 'hidden'}>
+                    <Button onClick={ this.props.showStats }>Show stats</Button>
+                    <Button onClick={ this.props.closeGame }>Close</Button>
+                </div>
+
                 {this.props.board.positions.map(function(value, i) {
                     return (
                         <Tile 
-                        key={i}
-                        loc={i}
-                        value={value}
-                        updateBoard={this.updateBoardAjax.bind(this)}
-                        turn={this.props.turn}
+                            key={i}
+                            loc={i}
+                            value={value}
+                            updateBoard={this.updateBoardAjax.bind(this)}
+                            turn={this.props.turn}
                         />
                         );
                 }.bind(this))}

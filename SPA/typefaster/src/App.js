@@ -3,6 +3,8 @@ import { HubConnectionBuilder } from '@aspnet/signalr';
 
 import Chat from './newComponents/Chat';
 import Game from './newComponents/Game';
+import Modal from './newComponents/Modal';
+import GameStats from './newComponents/gameStats';
 
 // import logo from './logo.svg';
 import './App.css';
@@ -11,7 +13,7 @@ class App extends Component {
 
   constructor() {
     super();
-
+    
     this.state = {
       hubConnection: null,
       user : {},
@@ -19,42 +21,29 @@ class App extends Component {
       game : {},
       gameStatus : {},
       connectedUsers : [],
-      challenges : [],
+      challenge : null,
       gameInProgress : false,
     }
 }
+
 componentDidMount = () => {
   const hubConnection = new HubConnectionBuilder()
                       .withUrl('http://localhost:5000/chatHub')
                       .build();
 
     
-  let nick = this.getNick();
-  console.log(nick);
-
-  // fetch(`http://localhost:5000/api/account/login?username=${nick}`)
-  //       .then(result => {
-  //           console.log(result);
-  //           let json = result.json();
-  //           return json;
-
-  //       }).then(data => {
-  //           console.log("login", data);
-  //           this.setState({ user : data.user });
-  //       });
-
+    // let nick = this.getNick();
+    let nick = prompt("Please enter your name", "Harry Potter");
 
     this.setState({ hubConnection, nick }, () => {
       this.state.hubConnection
         .start()
         .then(() => {
-          console.log('Connection started!');
           this.state.hubConnection
             .invoke('signIn', this.state.nick)
             .catch(err => console.log(err));
         })
         .catch(err => console.log('Error while establishing connection :(', err));
-      
       
         this.state.hubConnection.on('userInformation', (user) => {
         this.setState({user : user});
@@ -68,127 +57,130 @@ componentDidMount = () => {
       });
 
       this.state.hubConnection.on('connections', (connections) => {
-
         this.setState({connectedUsers : connections  });
-        
-        console.log(connections);
       });
 
-      this.state.hubConnection.on('challengeRecieved', (message) => {
-        var joined = this.state.challenges.concat(message);
-        this.setState({ challenges: joined });
-        console.log("challenges", this.state.challenges);
+      this.state.hubConnection.on('challengeRecieved', (challenge) => {
+        this.setState({ 
+          challenge : challenge,
+          show : true
+         });
       });
 
-      this.state.hubConnection.on('updateBoard', (gameInformation) => {
-        console.log("updateBoard",gameInformation);
+      this.state.hubConnection.on('updateBoard', (game) => {
         this.setState({
-          board : gameInformation.board,
-          game : gameInformation.game,
-          gameStatus : gameInformation.gameStatus,
+          game : game,
+          board : game.board,
+          gameStatus : game.gameStatus,
         });
-        console.log("state is", this.state);
       });
 
-      this.state.hubConnection.on('gameStarting', (gameModel) => {
-        console.log("game started",gameModel);
+      this.state.hubConnection.on('gameStarting', (game) => {
         this.setState({
-          game : gameModel.game,
-          board : gameModel.board,
+          challenge : null,
+          game : game,
+          board : game.board,
+          gameStatus : game.gameStatus,
           gameInProgress : true
         })
       });
-
-      // this.state.hubConnection.on('updateBoard', (gameModel) => {
-      //   console.log("updateBoard",gameModel);
-      //   this.props.updateBoard(gameModel.gameId);
-        
-      // });
-
     });
-   
-    
-
-
-
-    // this.setState({ hubConnection : hubConnection }, () => {
-    //   this.state.hubConnection
-    //   .start()
-    //   .then(() => {
-    //     console.log('Connection started!');
-    //   })
-    //   .catch(err => console.log('Error while establishing connection :(', err));
-    // });
-
-}
-
-
-startGame(id) {
-  console.log("ids", id);
-  this.setState( {
-    gameInProgress : true, 
-    gameId : id
-  });
-}
-
-updateBoard(id) {
-  console.log("ids", id);
-  this.setState( {
-    gameInProgress : true, 
-    gameId : id
-  });
 }
 
 acceptChallenge(userId, gameId) {
-  console.log("accepting game", gameId);
-  
   fetch(`http://localhost:5000/api/game/AcceptChallenge?AccepterId=${userId}&gameId=${gameId}`)
   .then(result => {
   })
 }
 
 
+showStats() {
+  var player1Id = this.state.game.player1.id;
+  var player2Id = this.state.game.player1.id;
+
+  this.closeGame();
+
+  fetch(`http://localhost:5000/api/game/GetStats?userId=${player1Id}&opponentId=${player2Id}`)
+  .then(result => {
+    return result.json();
+  }).then(json => {
+    this.setState({
+      gameStats : json
+    })
+  })
+
+  this.closeGame();
+  this.setState({showstats : true });
+}
+closeGame() {
+  this.setState({
+    game : {},
+    board : {},
+    gameStatus : {},
+    gameInProgress : false,
+  })
+}
+
+
   render() {
-    let game;
-
-    if(this.state.gameInProgress) {
-      game =  
-      <Game 
-        user={ this.state.user }
-        game={ this.state.game }
-        board={ this.state.board }
-        gameStatus= { this.state.gameStatus }
-      />
-    }
-
-
     return (
       <div className="App">
-        {/* <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header> */}
+       {this.renderChallengeSection()}
        <div>
-         {/* <Game verticals="3" horisontals="3" />
-         <Chat /> */}
-       <div className="GameContainer">
-         {game}
-       </div>
-       <div className="ChatContainer">
-        <Chat 
-          user={this.state.user}
-          connectedUsers={this.state.connectedUsers}
-          challenges={this.state.challenges}
-          acceptChallenge={this.acceptChallenge.bind(this)} 
-        />
-       </div>
+        <div className="GameContainer">
+          {this.renderGameSection()}
+        </div>
+        <div className="ChatContainer">
+          <Chat 
+            user={this.state.user}
+            connectedUsers={this.state.connectedUsers}
+            challenges={this.state.challenges}
+          />
+        </div>
        </div>
       </div>
     );
   }
 
+  renderChallengeSection() {
+    if(this.state.challenge) { 
+      return(
+        <Modal 
+        show={this.state.challenge} 
+        gameId={this.state.challenge.gameId}
+        acceptChallenge={this.acceptChallenge.bind(this)} 
+        userId={this.state.user.id}
+        handleClose={this.hideModal}>
+          <h2>{this.state.challenge.challengerName} has challenged you</h2>
+        </Modal>
+      )
+    }
+  }
 
+  renderGameSection() {
+    if(this.state.gameInProgress) {
+      return (  
+        <Game 
+          user={ this.state.user }
+          game={ this.state.game }
+          board={ this.state.board }
+          gameStatus= { this.state.gameStatus }
+        
+          showStats={ this.showStats.bind(this) }
+          closeGame={ this.closeGame.bind(this) }
+        />
+      ); 
+      } else if (this.state.gameStats) {
+        return (
+          <GameStats 
+            user={ this.state.user }
+            gameStats={this.state.gameStats }
+          />
 
+        )
+      }
+    
+  }
 
   getNick() {
     let nick = "John";

@@ -45,3 +45,5 @@ D:\Git\TypeFaster\Application\TypeFaster\TypeFaster\bin\Debug\netcoreapp2.1\Type
 D:\Git\TypeFaster\Application\TypeFaster\TypeFaster\bin\Debug\netcoreapp2.1\TypeFaster.Business.pdb
 D:\Git\TypeFaster\Application\TypeFaster\TypeFaster\bin\Debug\netcoreapp2.1\TypeFaster.Core.pdb
 D:\Git\TypeFaster\Application\TypeFaster\TypeFaster\obj\Debug\netcoreapp2.1\TypeFaster.csproj.CopyComplete
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster\bin\Debug\netcoreapp2.1\TypeFaster.DataAccess.dll
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster\bin\Debug\netcoreapp2.1\TypeFaster.DataAccess.pdb

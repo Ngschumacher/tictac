@@ -1,11 +1,13 @@
+using System.Collections.Generic;
 using TypeFaster.Core.Models;
 
 namespace TypeFaster.Core.Interfaces
 {
-    public interface IBoardService
+    public interface IGameService
     {
-        Game NewGame(int player1, int player2);
-        Board MakeMove(int gameId, int playerId, int move);
-        Game GetGame(int id);
+        GameModel NewGame(int player1, int player2);
+        GameModel MakeMove(int gameId, int playerId, int move);
+        GameModel GetGame(int id);
+        List<GameStats> GetStatsVersusOpponent(int userId, int opponentId);
     }
 }

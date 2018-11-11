@@ -1,6 +1,3 @@
-D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.BusinessTests\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
-D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.BusinessTests\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
-D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.BusinessTests\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
 D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.BusinessTests\bin\Debug\netcoreapp2.1\TypeFaster.Business.dll
 D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.BusinessTests\bin\Debug\netcoreapp2.1\TypeFaster.Core.dll
 D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.BusinessTests\bin\Debug\netcoreapp2.1\TypeFaster.Business.pdb
@@ -19,3 +16,8 @@ D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.BusinessTests\bin\Debug\netc
 D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.BusinessTests\bin\Debug\netcoreapp2.1\TypeFaster.pdb
 D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.BusinessTests\obj\Debug\netcoreapp2.1\TypeFaster.Business.Test.dll
 D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.BusinessTests\obj\Debug\netcoreapp2.1\TypeFaster.Business.Test.pdb
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.BusinessTests\bin\Debug\netcoreapp2.1\TypeFaster.DataAccess.dll
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.BusinessTests\bin\Debug\netcoreapp2.1\TypeFaster.DataAccess.pdb
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.BusinessTests\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.dll
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.BusinessTests\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.pdb
+D:\Git\TypeFaster\Application\TypeFaster\TypeFaster.BusinessTests\bin\Debug\netcoreapp2.1\nunit.engine.netstandard.dll

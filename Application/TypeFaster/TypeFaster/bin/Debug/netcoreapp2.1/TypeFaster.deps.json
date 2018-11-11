@@ -27,7 +27,6 @@
           "Microsoft.AspNet.SignalR": "2.4.0-preview2-20181018-02",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.EntityFrameworkCore": "2.2.0-preview3-35497",
-          "Microsoft.EntityFrameworkCore.SqlServer": "2.2.0-preview3-35497",
           "Microsoft.NETCore.App": "2.1.0",
           "TypeFaster.Business": "1.0.0"
         },
@@ -585,7 +584,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "2.2.0-preview3-35497",
           "System.Linq": "4.3.0",
           "System.Linq.Expressions": "4.3.0",
-          "TypeFaster.Core": "1.0.0"
+          "TypeFaster.Core": "1.0.0",
+          "TypeFaster.DataAccess": "1.0.0"
         },
         "runtime": {
           "TypeFaster.Business.dll": {}
@@ -600,6 +600,18 @@
         },
         "compile": {
           "TypeFaster.Core.dll": {}
+        }
+      },
+      "TypeFaster.DataAccess/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.2.0-preview3-35497",
+          "TypeFaster.Core": "1.0.0"
+        },
+        "runtime": {
+          "TypeFaster.DataAccess.dll": {}
+        },
+        "compile": {
+          "TypeFaster.DataAccess.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3578,6 +3590,11 @@
       "sha512": ""
     },
     "TypeFaster.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TypeFaster.DataAccess/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -13,16 +13,29 @@ namespace TypeFaster.Core.Models
         public User Player2 { get; set; }
         public int Player2Id { get; set; }
 
-        public int CurrentTurn { get; set; }
+        public int StartingPlayerId { get; set; }
     }
 
-    public class GameInformationViewModel
+
+    public class GameModel
     {
-        public Game Game { get; set; }
-        public Board Board { get; set; }
+        public int Id { get; set; }
+        public User Player1 { get; set; }
+        public User Player2 { get; set; }
+        public User WhosNext { get; set; }
         public GameStatus GameStatus { get; set; }
-        
+        public Board Board { get; set; }
     }
+
+    public class GameStats
+    {
+        public int Id { get; set; }
+        public User Player1 { get; set; }
+        public User Player2 { get; set; }
+        public User Winner { get; set; }
+        public bool Ended { get; set; }
+    }
+    
 
     public class GameStatus
     {

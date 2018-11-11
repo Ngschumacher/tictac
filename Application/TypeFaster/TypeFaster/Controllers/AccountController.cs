@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
 using TypeFaster.Core.Interfaces;
+using TypeFaster.Hubs;
 
 namespace TypeFaster.Controllers
 {

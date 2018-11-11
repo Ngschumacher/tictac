@@ -12,7 +12,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "2.2.0-preview3-35497",
           "System.Linq": "4.3.0",
           "System.Linq.Expressions": "4.3.0",
-          "TypeFaster.Core": "1.0.0"
+          "TypeFaster.Core": "1.0.0",
+          "TypeFaster.DataAccess": "1.0.0"
         },
         "runtime": {
           "TypeFaster.Business.dll": {}
@@ -520,6 +521,15 @@
         "runtime": {
           "TypeFaster.Core.dll": {}
         }
+      },
+      "TypeFaster.DataAccess/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.2.0-preview3-35497",
+          "TypeFaster.Core": "1.0.0"
+        },
+        "runtime": {
+          "TypeFaster.DataAccess.dll": {}
+        }
       }
     }
   },
@@ -908,6 +918,11 @@
       "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
     },
     "TypeFaster.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TypeFaster.DataAccess/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
