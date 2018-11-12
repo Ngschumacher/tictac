@@ -1,0 +1,61 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "D:\\Git\\TicTac\\Application\\TicTac.Website\\TicTac.Website.csproj",
+    "projectName": "TicTac.Website",
+    "projectPath": "D:\\Git\\TicTac\\Application\\TicTac.Website\\TicTac.Website.csproj",
+    "outputPath": "D:\\Git\\TicTac\\Application\\TicTac.Website\\obj\\",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp2.1"
+    ],
+    "frameworks": {
+      "netcoreapp2.1": {
+        "projectReferences": {
+          "D:\\Git\\TicTac\\Application\\TicTac.Business\\TicTac.Business.csproj": {
+            "projectPath": "D:\\Git\\TicTac\\Application\\TicTac.Business\\TicTac.Business.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.1": {
+      "dependencies": {
+        "Microsoft.AspNet.SignalR": {
+          "target": "Package",
+          "version": "[2.4.0-preview2-20181018-02, )"
+        },
+        "Microsoft.AspNetCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.1.1, )",
+          "autoReferenced": true
+        },
+        "Microsoft.EntityFrameworkCore": {
+          "target": "Package",
+          "version": "[2.2.0-preview3-35497, )"
+        },
+        "Microsoft.NETCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.1.0, )",
+          "autoReferenced": true
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}

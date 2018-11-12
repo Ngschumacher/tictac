@@ -1,0 +1,1140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="abec8d0a-c3c5-4b28-952a-293d0faa7644" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.TicTac/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.TicTac/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.TicTac/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.TicTac/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.TicTac/riderModule.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TicTac.Core/Interfaces/IGameRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TicTac.Core/Models/GameModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TicTac.Core/Models/GameStats.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TicTac.Core/Models/GameStatus.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TicTac.Website/Hubs/Models/ChallengeViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TypeFaster/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TypeFaster/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TypeFaster/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TypeFaster/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TypeFaster/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TypeFaster/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.BusinessTests/GameDeciderTest.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.BusinessTests/GameServiceTest.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.BusinessTests/TypeFaster.BusinessTests.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.BusinessTests/bin/Debug/netcoreapp2.1/NUnit3.TestAdapter.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.BusinessTests/bin/Debug/netcoreapp2.1/NUnit3.TestAdapter.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.BusinessTests/bin/Debug/netcoreapp2.1/TypeFaster.Business.Test.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.BusinessTests/bin/Debug/netcoreapp2.1/TypeFaster.Business.Test.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.BusinessTests/bin/Debug/netcoreapp2.1/TypeFaster.Business.Test.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.BusinessTests/bin/Debug/netcoreapp2.1/TypeFaster.Business.Test.runtimeconfig.dev.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.BusinessTests/bin/Debug/netcoreapp2.1/TypeFaster.Business.Test.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.BusinessTests/bin/Debug/netcoreapp2.1/TypeFaster.Business.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.BusinessTests/bin/Debug/netcoreapp2.1/TypeFaster.Business.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.BusinessTests/bin/Debug/netcoreapp2.1/TypeFaster.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.BusinessTests/bin/Debug/netcoreapp2.1/TypeFaster.Core.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.BusinessTests/bin/Debug/netcoreapp2.1/TypeFaster.DataAccess.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.BusinessTests/bin/Debug/netcoreapp2.1/TypeFaster.DataAccess.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.BusinessTests/bin/Debug/netcoreapp2.1/TypeFaster.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.BusinessTests/bin/Debug/netcoreapp2.1/TypeFaster.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.BusinessTests/bin/Debug/netcoreapp2.1/nunit.engine.netstandard.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.BusinessTests/bin/Debug/netcoreapp2.1/nunit_random_seed.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.BusinessTests/obj/Debug/netcoreapp2.1/TypeFaster.Business.Test.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.BusinessTests/obj/Debug/netcoreapp2.1/TypeFaster.Business.Test.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.BusinessTests/obj/Debug/netcoreapp2.1/TypeFaster.BusinessTests.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.BusinessTests/obj/Debug/netcoreapp2.1/TypeFaster.BusinessTests.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.BusinessTests/obj/Debug/netcoreapp2.1/TypeFaster.BusinessTests.Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.BusinessTests/obj/Debug/netcoreapp2.1/TypeFaster.BusinessTests.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.BusinessTests/obj/Debug/netcoreapp2.1/TypeFaster.BusinessTests.csproj.CopyComplete" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.BusinessTests/obj/Debug/netcoreapp2.1/TypeFaster.BusinessTests.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.BusinessTests/obj/Debug/netcoreapp2.1/TypeFaster.BusinessTests.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.BusinessTests/obj/Debug/netcoreapp2.1/TypeFaster.BusinessTests.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.BusinessTests/obj/TypeFaster.BusinessTests.csproj.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.BusinessTests/obj/TypeFaster.BusinessTests.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.BusinessTests/obj/TypeFaster.BusinessTests.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.BusinessTests/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.BusinessTests/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Businesss/BoardService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Businesss/Class1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Businesss/GameDecider.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Businesss/TypeFaster.Businesss.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Businesss/UserService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Businesss/bin/Debug/netcoreapp2.1/TypeFaster.Business.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Businesss/bin/Debug/netcoreapp2.1/TypeFaster.Business.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Businesss/bin/Debug/netcoreapp2.1/TypeFaster.Business.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Businesss/bin/Debug/netcoreapp2.1/TypeFaster.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Businesss/bin/Debug/netcoreapp2.1/TypeFaster.Core.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Businesss/bin/Debug/netcoreapp2.1/TypeFaster.DataAccess.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Businesss/bin/Debug/netcoreapp2.1/TypeFaster.DataAccess.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Businesss/obj/Debug/netcoreapp2.1/TypeFaster.Business.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Businesss/obj/Debug/netcoreapp2.1/TypeFaster.Business.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Businesss/obj/Debug/netcoreapp2.1/TypeFaster.Businesss.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Businesss/obj/Debug/netcoreapp2.1/TypeFaster.Businesss.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Businesss/obj/Debug/netcoreapp2.1/TypeFaster.Businesss.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Businesss/obj/Debug/netcoreapp2.1/TypeFaster.Businesss.csproj.CopyComplete" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Businesss/obj/Debug/netcoreapp2.1/TypeFaster.Businesss.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Businesss/obj/Debug/netcoreapp2.1/TypeFaster.Businesss.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Businesss/obj/Debug/netcoreapp2.1/TypeFaster.Businesss.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Businesss/obj/TypeFaster.Businesss.csproj.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Businesss/obj/TypeFaster.Businesss.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Businesss/obj/TypeFaster.Businesss.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Businesss/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Businesss/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Core/Class1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Core/Interfaces/IBoardServices.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Core/Interfaces/IUserService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Core/Models/Board.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Core/Models/Game.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Core/Models/Move.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Core/Models/User.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Core/TypeFaster.Core.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Core/bin/Debug/netcoreapp2.1/TypeFaster.Core.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Core/bin/Debug/netcoreapp2.1/TypeFaster.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Core/bin/Debug/netcoreapp2.1/TypeFaster.Core.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Core/obj/Debug/netcoreapp2.1/TypeFaster.Core.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Core/obj/Debug/netcoreapp2.1/TypeFaster.Core.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Core/obj/Debug/netcoreapp2.1/TypeFaster.Core.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Core/obj/Debug/netcoreapp2.1/TypeFaster.Core.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Core/obj/Debug/netcoreapp2.1/TypeFaster.Core.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Core/obj/Debug/netcoreapp2.1/TypeFaster.Core.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Core/obj/Debug/netcoreapp2.1/TypeFaster.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Core/obj/Debug/netcoreapp2.1/TypeFaster.Core.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Core/obj/TypeFaster.Core.csproj.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Core/obj/TypeFaster.Core.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Core/obj/TypeFaster.Core.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Core/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.Core/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.DataAccess/Contexts/GameContext.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.DataAccess/GameRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.DataAccess/TypeFaster.DataAccess.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.DataAccess/bin/Debug/netcoreapp2.1/TypeFaster.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.DataAccess/bin/Debug/netcoreapp2.1/TypeFaster.Core.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.DataAccess/bin/Debug/netcoreapp2.1/TypeFaster.DataAccess.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.DataAccess/bin/Debug/netcoreapp2.1/TypeFaster.DataAccess.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.DataAccess/bin/Debug/netcoreapp2.1/TypeFaster.DataAccess.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.DataAccess/obj/Debug/netcoreapp2.1/TypeFaster.DataAccess.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.DataAccess/obj/Debug/netcoreapp2.1/TypeFaster.DataAccess.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.DataAccess/obj/Debug/netcoreapp2.1/TypeFaster.DataAccess.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.DataAccess/obj/Debug/netcoreapp2.1/TypeFaster.DataAccess.csproj.CopyComplete" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.DataAccess/obj/Debug/netcoreapp2.1/TypeFaster.DataAccess.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.DataAccess/obj/Debug/netcoreapp2.1/TypeFaster.DataAccess.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.DataAccess/obj/Debug/netcoreapp2.1/TypeFaster.DataAccess.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.DataAccess/obj/Debug/netcoreapp2.1/TypeFaster.DataAccess.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.DataAccess/obj/Debug/netcoreapp2.1/TypeFaster.DataAccess.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.DataAccess/obj/TypeFaster.DataAccess.csproj.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.DataAccess/obj/TypeFaster.DataAccess.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.DataAccess/obj/TypeFaster.DataAccess.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.DataAccess/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.DataAccess/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/ConnectionMapping.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/Controllers/AccountController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/Controllers/GameController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/Controllers/ValuesController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/Hubs/ChatHub.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/Properties/launchSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/Startup.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/TypeFaster.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/appsettings.Development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/bin/Debug/netcoreapp2.1/TypeFaster.Business.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/bin/Debug/netcoreapp2.1/TypeFaster.Business.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/bin/Debug/netcoreapp2.1/TypeFaster.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/bin/Debug/netcoreapp2.1/TypeFaster.Core.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/bin/Debug/netcoreapp2.1/TypeFaster.DataAccess.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/bin/Debug/netcoreapp2.1/TypeFaster.DataAccess.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/bin/Debug/netcoreapp2.1/TypeFaster.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/bin/Debug/netcoreapp2.1/TypeFaster.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/bin/Debug/netcoreapp2.1/TypeFaster.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/bin/Debug/netcoreapp2.1/TypeFaster.runtimeconfig.dev.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/bin/Debug/netcoreapp2.1/TypeFaster.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/obj/Debug/netcoreapp2.1/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/obj/Debug/netcoreapp2.1/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/obj/Debug/netcoreapp2.1/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/obj/Debug/netcoreapp2.1/TypeFaster.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/obj/Debug/netcoreapp2.1/TypeFaster.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/obj/Debug/netcoreapp2.1/TypeFaster.RazorAssemblyInfo.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/obj/Debug/netcoreapp2.1/TypeFaster.RazorAssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/obj/Debug/netcoreapp2.1/TypeFaster.RazorTargetAssemblyInfo.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/obj/Debug/netcoreapp2.1/TypeFaster.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/obj/Debug/netcoreapp2.1/TypeFaster.csproj.CopyComplete" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/obj/Debug/netcoreapp2.1/TypeFaster.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/obj/Debug/netcoreapp2.1/TypeFaster.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/obj/Debug/netcoreapp2.1/TypeFaster.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/obj/Debug/netcoreapp2.1/TypeFaster.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/obj/Debug/netcoreapp2.1/TypeFaster.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/obj/TypeFaster.csproj.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/obj/TypeFaster.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/obj/TypeFaster.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeFaster/schema.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SPA/typefaster/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../SPA/typefaster/src/App.js" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="580483229">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cs" value="35" />
+          <entry key="csproj" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="C#" value="35" />
+          <entry key="Csproj" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cs" value="401" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="C#" value="401" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TicTac.Core/Interfaces/IGameRepository.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+              <folding>
+                <marker date="1542041448796" expanded="true" signature="6:59" ph="..." />
+                <marker date="1542041448796" expanded="true" signature="94:333" ph="{...}" />
+                <marker date="1542041448796" expanded="true" signature="133:331" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TicTac.Core/Interfaces/IBoardServices.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="10" selection-end-column="2" />
+              <folding>
+                <marker date="1542041498087" expanded="true" signature="6:60" ph="..." />
+                <marker date="1542041498087" expanded="true" signature="97:377" ph="{...}" />
+                <marker date="1542041498087" expanded="true" signature="134:374" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TicTac.Business.Test/GameDeciderTest.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="141" column="34" selection-start-line="141" selection-start-column="34" selection-end-line="141" selection-end-column="34" />
+              <folding>
+                <marker date="1542041476215" expanded="false" signature="6:48" ph="..." />
+                <marker date="1542041476215" expanded="true" signature="81:3999" ph="{...}" />
+                <marker date="1542041476215" expanded="true" signature="116:3997" ph="{...}" />
+                <marker date="1542041476215" expanded="true" signature="180:531" ph="{...}" />
+                <marker date="1542041476215" expanded="true" signature="217:396" ph="{...}" />
+                <marker date="1542041476215" expanded="true" signature="259:382" ph="{...}" />
+                <marker date="1542041476215" expanded="true" signature="592:943" ph="{...}" />
+                <marker date="1542041476215" expanded="true" signature="629:808" ph="{...}" />
+                <marker date="1542041476215" expanded="true" signature="671:794" ph="{...}" />
+                <marker date="1542041476215" expanded="true" signature="1002:1351" ph="{...}" />
+                <marker date="1542041476215" expanded="true" signature="1039:1218" ph="{...}" />
+                <marker date="1542041476215" expanded="true" signature="1081:1204" ph="{...}" />
+                <marker date="1542041476215" expanded="true" signature="1410:1759" ph="{...}" />
+                <marker date="1542041476215" expanded="true" signature="1447:1626" ph="{...}" />
+                <marker date="1542041476215" expanded="true" signature="1489:1612" ph="{...}" />
+                <marker date="1542041476215" expanded="true" signature="1818:2167" ph="{...}" />
+                <marker date="1542041476215" expanded="true" signature="1855:2034" ph="{...}" />
+                <marker date="1542041476215" expanded="true" signature="1897:2020" ph="{...}" />
+                <marker date="1542041476215" expanded="true" signature="2232:2581" ph="{...}" />
+                <marker date="1542041476215" expanded="true" signature="2269:2448" ph="{...}" />
+                <marker date="1542041476215" expanded="true" signature="2311:2434" ph="{...}" />
+                <marker date="1542041476215" expanded="true" signature="2647:2996" ph="{...}" />
+                <marker date="1542041476215" expanded="true" signature="2684:2863" ph="{...}" />
+                <marker date="1542041476215" expanded="true" signature="2726:2849" ph="{...}" />
+                <marker date="1542041476215" expanded="true" signature="3069:3492" ph="{...}" />
+                <marker date="1542041476215" expanded="true" signature="3106:3285" ph="{...}" />
+                <marker date="1542041476215" expanded="true" signature="3148:3271" ph="{...}" />
+                <marker date="1542041476215" expanded="true" signature="3567:3991" ph="{...}" />
+                <marker date="1542041476215" expanded="true" signature="3604:3783" ph="{...}" />
+                <marker date="1542041476215" expanded="true" signature="3646:3769" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TicTac.Business/UserService.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <marker date="1542041517797" expanded="false" signature="6:142" ph="..." />
+                <marker date="1542041517797" expanded="true" signature="170:1129" ph="{...}" />
+                <marker date="1542041517797" expanded="true" signature="216:1127" ph="{...}" />
+                <marker date="1542041517797" expanded="true" signature="271:711" ph="{...}" />
+                <marker date="1542041517797" expanded="true" signature="325:701" ph="{...}" />
+                <marker date="1542041517797" expanded="true" signature="447:617" ph="{...}" />
+                <marker date="1542041517797" expanded="true" signature="487:554" ph="{...}" />
+                <marker date="1542041517797" expanded="true" signature="753:905" ph="{...}" />
+                <marker date="1542041517797" expanded="true" signature="807:895" ph="{...}" />
+                <marker date="1542041517797" expanded="true" signature="961:1121" ph="{...}" />
+                <marker date="1542041517797" expanded="true" signature="1015:1111" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TicTac.Business/GameDecider.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-63">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <marker date="1542041530586" expanded="false" signature="6:44" ph="..." />
+                <marker date="1542041530586" expanded="true" signature="72:1497" ph="{...}" />
+                <marker date="1542041530586" expanded="true" signature="103:1495" ph="{...}" />
+                <marker date="1542041530586" expanded="true" signature="273:418" ph="{...}" />
+                <marker date="1542041530586" expanded="true" signature="466:525" ph="{...}" />
+                <marker date="1542041530586" expanded="true" signature="560:1489" ph="{...}" />
+                <marker date="1542041530586" expanded="true" signature="602:1054" ph="{...}" />
+                <marker date="1542041530586" expanded="true" signature="769:821" ph="{...}" />
+                <marker date="1542041530586" expanded="true" signature="988:1040" ph="{...}" />
+                <marker date="1542041530586" expanded="true" signature="1209:1253" ph="{...}" />
+                <marker date="1542041530586" expanded="true" signature="1408:1452" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TicTac.Business/BoardService.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+              <folding>
+                <marker date="1542041603787" expanded="false" signature="6:147" ph="..." />
+                <marker date="1542041603787" expanded="true" signature="175:4715" ph="{...}" />
+                <marker date="1542041603787" expanded="true" signature="221:4713" ph="{...}" />
+                <marker date="1542041603787" expanded="true" signature="342:399" ph="{...}" />
+                <marker date="1542041603787" expanded="true" signature="464:593" ph="{...}" />
+                <marker date="1542041603787" expanded="true" signature="665:1778" ph="{...}" />
+                <marker date="1542041603787" expanded="true" signature="1436:1597" ph="{...}" />
+                <marker date="1542041603787" expanded="true" signature="1825:1996" ph="{...}" />
+                <marker date="1542041603787" expanded="true" signature="2080:2962" ph="{...}" />
+                <marker date="1542041603787" expanded="true" signature="2275:2925" ph="{...}" />
+                <marker date="1542041603787" expanded="true" signature="2483:2608" ph="{...}" />
+                <marker date="1542041603787" expanded="true" signature="2653:2877" ph="{...}" />
+                <marker date="1542041603787" expanded="true" signature="3019:3853" ph="{...}" />
+                <marker date="1542041603787" expanded="true" signature="3254:3526" ph="{...}" />
+                <marker date="1542041603787" expanded="true" signature="3356:3512" ph="{...}" />
+                <marker date="1542041603787" expanded="true" signature="3578:3811" ph="{...}" />
+                <marker date="1542041603787" expanded="true" signature="3902:4263" ph="{...}" />
+                <marker date="1542041603787" expanded="true" signature="3984:4227" ph="{...}" />
+                <marker date="1542041603787" expanded="true" signature="4313:4707" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TicTac.DataAccess/GameRepository.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="42" column="40" lean-forward="true" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
+              <folding>
+                <marker date="1542043345294" expanded="false" signature="6:193" ph="..." />
+                <marker date="1542043345294" expanded="true" signature="223:2712" ph="{...}" />
+                <marker date="1542043345294" expanded="true" signature="275:2710" ph="{...}" />
+                <marker date="1542043345294" expanded="true" signature="384:435" ph="{...}" />
+                <marker date="1542043345294" expanded="true" signature="498:1373" ph="{...}" />
+                <marker date="1542043345294" expanded="true" signature="968:1147" ph="{...}" />
+                <marker date="1542043345294" expanded="true" signature="1411:2051" ph="{...}" />
+                <marker date="1542043345294" expanded="true" signature="2093:2188" ph="{...}" />
+                <marker date="1542043345294" expanded="true" signature="2268:2704" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TicTac.Website/Controllers/GameController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="62" column="70" lean-forward="true" selection-start-line="62" selection-start-column="70" selection-end-line="62" selection-end-column="70" />
+              <folding>
+                <marker date="1542042664477" expanded="false" signature="6:281" ph="..." />
+                <marker date="1542042664477" expanded="true" signature="320:2950" ph="{...}" />
+                <marker date="1542042664477" expanded="true" signature="403:2948" ph="{...}" />
+                <marker date="1542042664477" expanded="true" signature="606:695" ph="{...}" />
+                <marker date="1542042664477" expanded="true" signature="792:912" ph="{...}" />
+                <marker date="1542042664477" expanded="true" signature="981:1073" ph="{...}" />
+                <marker date="1542042664477" expanded="true" signature="1179:1889" ph="{...}" />
+                <marker date="1542042664477" expanded="true" signature="1416:1501" ph="{...}" />
+                <marker date="1542042664477" expanded="true" signature="1534:1600" ph="{...}" />
+                <marker date="1542042664477" expanded="true" signature="2015:2471" ph="{...}" />
+                <marker date="1542042664477" expanded="true" signature="2142:2246" ph="{...}" />
+                <marker date="1542042664477" expanded="true" signature="2580:2942" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TicTac.Website/Hubs/ChatHub.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <marker date="1542043065386" expanded="false" signature="6:162" ph="..." />
+                <marker date="1542043065386" expanded="true" signature="194:1652" ph="{...}" />
+                <marker date="1542043065386" expanded="true" signature="226:343" ph="{...}" />
+                <marker date="1542043065386" expanded="true" signature="376:1650" ph="{...}" />
+                <marker date="1542043065386" expanded="true" signature="558:649" ph="{...}" />
+                <marker date="1542043065386" expanded="true" signature="701:965" ph="{...}" />
+                <marker date="1542043065386" expanded="true" signature="1016:1071" ph="{...}" />
+                <marker date="1542043065386" expanded="true" signature="1143:1416" ph="{...}" />
+                <marker date="1542043065386" expanded="true" signature="1458:1644" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TicTac.Business.Test/GameServiceTest.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2559">
+              <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+              <folding>
+                <marker date="1542041485530" expanded="false" signature="6:162" ph="..." />
+                <marker date="1542041485530" expanded="true" signature="195:7873" ph="{...}" />
+                <marker date="1542041485530" expanded="true" signature="230:7871" ph="{...}" />
+                <marker date="1542041485530" expanded="true" signature="259:397" ph="{...}" />
+                <marker date="1542041485530" expanded="true" signature="472:539" ph="{...}" />
+                <marker date="1542041485530" expanded="true" signature="584:652" ph="{...}" />
+                <marker date="1542041485530" expanded="true" signature="765:1658" ph="{...}" />
+                <marker date="1542041485530" expanded="true" signature="797:1032" ph="{...}" />
+                <marker date="1542041485530" expanded="true" signature="1112:1188" ph="{...}" />
+                <marker date="1542041485530" expanded="true" signature="1717:1908" ph="{...}" />
+                <marker date="1542041485530" expanded="true" signature="1967:2205" ph="{...}" />
+                <marker date="1542041485530" expanded="true" signature="2263:2468" ph="{...}" />
+                <marker date="1542041485530" expanded="true" signature="2538:2651" ph="{...}" />
+                <marker date="1542041485530" expanded="true" signature="2724:2984" ph="{...}" />
+                <marker date="1542041485530" expanded="true" signature="2768:2871" ph="{...}" />
+                <marker date="1542041485530" expanded="true" signature="3043:3396" ph="{...}" />
+                <marker date="1542041485530" expanded="true" signature="3087:3190" ph="{...}" />
+                <marker date="1542041485530" expanded="true" signature="3456:4134" ph="{...}" />
+                <marker date="1542041485530" expanded="true" signature="3500:3871" ph="{...}" />
+                <marker date="1542041485530" expanded="true" signature="4203:4394" ph="{...}" />
+                <marker date="1542041485530" expanded="true" signature="4466:4628" ph="{...}" />
+                <marker date="1542041485530" expanded="true" signature="4707:5645" ph="{...}" />
+                <marker date="1542041485530" expanded="true" signature="4764:5443" ph="{...}" />
+                <marker date="1542041485530" expanded="true" signature="4917:5425" ph="{...}" />
+                <marker date="1542041485530" expanded="true" signature="5726:6467" ph="{...}" />
+                <marker date="1542041485530" expanded="true" signature="5783:6268" ph="{...}" />
+                <marker date="1542041485530" expanded="true" signature="5936:6250" ph="{...}" />
+                <marker date="1542041485530" expanded="true" signature="6542:7865" ph="{...}" />
+                <marker date="1542041485530" expanded="true" signature="6599:7666" ph="{...}" />
+                <marker date="1542041485530" expanded="true" signature="6752:7648" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>UserChange</find>
+      <find>_userCount</find>
+      <find>challengeRecieved</find>
+      <find>CurrentTurnUser</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/TicTac.Core/Models/GameModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TicTac.Core/Models/GameStats.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TicTac.Core/Models/GameStatus.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TicTac.Business/BoardService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TicTac.Business/GameDecider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TicTac.Business/UserService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TicTac.Website/ConnectionMapping.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TicTac.Website/Controllers/GameController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TicTac.Core/Interfaces/IBoardServices.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TicTac.Website/Hubs/ChatHub.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TicTac.Core/Interfaces/IUserService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TicTac.Website/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TicTac.Core/Models/Board.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TicTac.Core/Models/Game.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TicTac.Website/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TicTac.Core/Models/Move.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TicTac.Business.Test/GameDeciderTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TicTac.Core/Models/User.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TicTac.Business.Test/GameServiceTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TicTac.DataAccess/Contexts/GameContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TicTac.DataAccess/GameRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TicTac.Website/Hubs/Models/ChallengeViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TicTac.Core/Interfaces/IGameRepository.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/TicTac.Website/Hubs/ChallengeViewModel.cs" />
+        <option value="$PROJECT_DIR$/TicTac.Website/Controllers/AccountController.cs" />
+        <option value="$PROJECT_DIR$/TicTac.Website/Hubs/Models/ChallengeViewModel.cs" />
+        <option value="$PROJECT_DIR$/TicTac.DataAccess/IGameRepository.cs" />
+        <option value="$PROJECT_DIR$/TicTac.DataAccess/Contexts/GameContext.cs" />
+        <option value="$PROJECT_DIR$/TicTac.Website/Startup.cs" />
+        <option value="$PROJECT_DIR$/TicTac.Website/Program.cs" />
+        <option value="$PROJECT_DIR$/TicTac.Website/ConnectionMapping.cs" />
+        <option value="$PROJECT_DIR$/TicTac.Core/Models/Game.cs" />
+        <option value="$PROJECT_DIR$/TicTac.Core/Models/Board.cs" />
+        <option value="$PROJECT_DIR$/TicTac.Core/Models/Move.cs" />
+        <option value="$PROJECT_DIR$/TicTac.Core/Models/User.cs" />
+        <option value="$PROJECT_DIR$/TicTac.Core/Models/GameModel.cs" />
+        <option value="$PROJECT_DIR$/TicTac.Core/Models/GameStats.cs" />
+        <option value="$PROJECT_DIR$/TicTac.Core/Models/GameStatus.cs" />
+        <option value="$PROJECT_DIR$/TicTac.Core/Interfaces/IUserService.cs" />
+        <option value="$PROJECT_DIR$/TicTac.Core/Interfaces/IGameRepository.cs" />
+        <option value="$PROJECT_DIR$/TicTac.Core/Interfaces/IBoardServices.cs" />
+        <option value="$PROJECT_DIR$/TicTac.Business.Test/GameDeciderTest.cs" />
+        <option value="$PROJECT_DIR$/TicTac.Business.Test/GameServiceTest.cs" />
+        <option value="$PROJECT_DIR$/TicTac.Business/UserService.cs" />
+        <option value="$PROJECT_DIR$/TicTac.Business/GameDecider.cs" />
+        <option value="$PROJECT_DIR$/TicTac.Business/BoardService.cs" />
+        <option value="$PROJECT_DIR$/TicTac.Website/Controllers/GameController.cs" />
+        <option value="$PROJECT_DIR$/TicTac.Website/Hubs/ChatHub.cs" />
+        <option value="$PROJECT_DIR$/TicTac.DataAccess/GameRepository.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="FileSystemExplorer" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="TicTac" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="gamecontro&#9;null&#9;null&#10;acceptchallenge&#9;null&#9;null&#10;editorconfig&#9;null&#9;null&#10;gamedec&#9;null&#9;null" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../SPA" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/TicTac.Website/bin/Debug/netcoreapp2.1/TicTac.Website.dll" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TicTac.Website" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <envs>
+        <env name="ASPNETCORE_ENVIRONMENT" value="Development" />
+        <env name="ASPNETCORE_URLS" value="http://localhost:5000" />
+      </envs>
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/TicTac.Website/TicTac.Website.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v2.1" />
+      <browser start="true" url="https://localhost:5001" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="abec8d0a-c3c5-4b28-952a-293d0faa7644" name="Default Changelist" comment="" />
+      <created>1542039900328</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1542039900328</updated>
+      <workItem from="1542039902290" duration="4560000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="4560000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="NuGet" weight="0.329718" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" weight="0.329718" />
+      <window_info anchor="bottom" id="REST Client" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Build" weight="0.329718" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3991323" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Errors In Solution" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/TicTac.Website/Controllers/GameController.cs</url>
+          <line>78</line>
+          <properties documentPath="$PROJECT_DIR$/TicTac.Website/Controllers/GameController.cs" initialLine="78">
+            <startOffsets>
+              <option value="2594" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2640" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/TicTac.Website/Controllers/GameController.cs</url>
+          <line>62</line>
+          <properties documentPath="$PROJECT_DIR$/TicTac.Website/Controllers/GameController.cs" initialLine="62">
+            <startOffsets>
+              <option value="2029" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2087" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/TicTac.Website/TicTac.Website.csproj">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TicTac.Website/Hubs/ChallengeViewModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TicTac.Website/Controllers/ValuesController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-143" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TicTac.Website/Hubs/Models/ChallengeViewModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="1" selection-end-line="5" selection-end-column="1" />
+          <folding>
+            <marker date="1542041155790" expanded="true" signature="37:175" ph="{...}" />
+            <marker date="1542041155790" expanded="true" signature="75:173" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TicTac.Website/Controllers/AccountController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TicTac.DataAccess/IGameRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TicTac.DataAccess/Contexts/GameContext.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <marker date="1542041286319" expanded="false" signature="6:76" ph="..." />
+            <marker date="1542041286319" expanded="true" signature="115:1136" ph="{...}" />
+            <marker date="1542041286319" expanded="true" signature="171:1134" ph="{...}" />
+            <marker date="1542041286319" expanded="true" signature="398:615" ph="{...}" />
+            <marker date="1542041286319" expanded="true" signature="692:1128" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TicTac.Website/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="54" selection-end-column="1" />
+          <folding>
+            <marker date="1542041304904" expanded="false" signature="6:332" ph="..." />
+            <marker date="1542041304904" expanded="true" signature="359:2014" ph="{...}" />
+            <marker date="1542041304904" expanded="true" signature="386:2012" ph="{...}" />
+            <marker date="1542041304904" expanded="true" signature="441:495" ph="{...}" />
+            <marker date="1542041304904" expanded="true" signature="719:1449" ph="{...}" />
+            <marker date="1542041304904" expanded="true" signature="1087:1402" ph="{...}" />
+            <marker date="1542041304904" expanded="true" signature="1173:1386" ph="{...}" />
+            <marker date="1542041304904" expanded="true" signature="1638:2006" ph="{...}" />
+            <marker date="1542041304904" expanded="true" signature="1677:1741" ph="{...}" />
+            <marker date="1542041304904" expanded="true" signature="1741:1805" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TicTac.Website/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="13" column="1" selection-end-line="13" selection-end-column="1" />
+          <folding>
+            <marker date="1542041310185" expanded="false" signature="6:63" ph="..." />
+            <marker date="1542041310185" expanded="true" signature="90:404" ph="{...}" />
+            <marker date="1542041310185" expanded="true" signature="117:402" ph="{...}" />
+            <marker date="1542041310185" expanded="true" signature="166:231" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TicTac.Core/Class1.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TicTac.Website/ConnectionMapping.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
+          <folding>
+            <marker date="1542041313541" expanded="false" signature="6:52" ph="..." />
+            <marker date="1542041313541" expanded="true" signature="79:2007" ph="{...}" />
+            <marker date="1542041313541" expanded="true" signature="119:2005" ph="{...}" />
+            <marker date="1542041313541" expanded="true" signature="268:326" ph="{...}" />
+            <marker date="1542041313541" expanded="true" signature="361:463" ph="{...}" />
+            <marker date="1542041313541" expanded="true" signature="517:930" ph="{...}" />
+            <marker date="1542041313541" expanded="true" signature="667:799" ph="{...}" />
+            <marker date="1542041313541" expanded="true" signature="989:1205" ph="{...}" />
+            <marker date="1542041313541" expanded="true" signature="1096:1147" ph="{...}" />
+            <marker date="1542041313541" expanded="true" signature="1262:1716" ph="{...}" />
+            <marker date="1542041313541" expanded="true" signature="1412:1459" ph="{...}" />
+            <marker date="1542041313541" expanded="true" signature="1601:1674" ph="{...}" />
+            <marker date="1542041313541" expanded="true" signature="1795:1881" ph="{...}" />
+            <marker date="1542041313541" expanded="true" signature="1946:1999" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TicTac.Core/Models/Move.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+          <folding>
+            <marker date="1542041402651" expanded="false" signature="6:96" ph="..." />
+            <marker date="1542041402651" expanded="true" signature="127:468" ph="{...}" />
+            <marker date="1542041402651" expanded="true" signature="151:466" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TicTac.Core/Models/User.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+          <folding>
+            <marker date="1542041402542" expanded="true" signature="75:204" ph="{...}" />
+            <marker date="1542041402542" expanded="true" signature="99:202" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TicTac.Core/Models/GameModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1542041390038" expanded="true" signature="29:322" ph="{...}" />
+            <marker date="1542041390038" expanded="true" signature="58:320" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TicTac.Core/Models/GameStats.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <marker date="1542041395318" expanded="true" signature="29:268" ph="{...}" />
+            <marker date="1542041395318" expanded="true" signature="58:266" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TicTac.Core/Models/Game.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <marker date="1542041402590" expanded="true" signature="64:428" ph="{...}" />
+            <marker date="1542041402590" expanded="true" signature="88:426" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TicTac.Core/Models/GameStatus.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <folding>
+            <marker date="1542041400149" expanded="true" signature="29:153" ph="{...}" />
+            <marker date="1542041400149" expanded="true" signature="59:151" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TicTac.Core/Models/Board.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <marker date="1542041347904" expanded="true" signature="29:224" ph="{...}" />
+            <marker date="1542041347904" expanded="true" signature="55:221" ph="{...}" />
+            <marker date="1542041347904" expanded="true" signature="118:213" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TicTac.Core/Interfaces/IUserService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+          <folding>
+            <marker date="1542041442210" expanded="true" signature="6:60" ph="..." />
+            <marker date="1542041442210" expanded="true" signature="97:242" ph="{...}" />
+            <marker date="1542041442210" expanded="true" signature="134:239" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TicTac.Core/Interfaces/IGameRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding>
+            <marker date="1542041448796" expanded="true" signature="6:59" ph="..." />
+            <marker date="1542041448796" expanded="true" signature="94:333" ph="{...}" />
+            <marker date="1542041448796" expanded="true" signature="133:331" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TicTac.Core/Interfaces/IBoardServices.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="10" selection-end-column="2" />
+          <folding>
+            <marker date="1542041498087" expanded="true" signature="6:60" ph="..." />
+            <marker date="1542041498087" expanded="true" signature="97:377" ph="{...}" />
+            <marker date="1542041498087" expanded="true" signature="134:374" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TicTac.Business.Test/GameServiceTest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2559">
+          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+          <folding>
+            <marker date="1542041485530" expanded="false" signature="6:162" ph="..." />
+            <marker date="1542041485530" expanded="true" signature="195:7873" ph="{...}" />
+            <marker date="1542041485530" expanded="true" signature="230:7871" ph="{...}" />
+            <marker date="1542041485530" expanded="true" signature="259:397" ph="{...}" />
+            <marker date="1542041485530" expanded="true" signature="472:539" ph="{...}" />
+            <marker date="1542041485530" expanded="true" signature="584:652" ph="{...}" />
+            <marker date="1542041485530" expanded="true" signature="765:1658" ph="{...}" />
+            <marker date="1542041485530" expanded="true" signature="797:1032" ph="{...}" />
+            <marker date="1542041485530" expanded="true" signature="1112:1188" ph="{...}" />
+            <marker date="1542041485530" expanded="true" signature="1717:1908" ph="{...}" />
+            <marker date="1542041485530" expanded="true" signature="1967:2205" ph="{...}" />
+            <marker date="1542041485530" expanded="true" signature="2263:2468" ph="{...}" />
+            <marker date="1542041485530" expanded="true" signature="2538:2651" ph="{...}" />
+            <marker date="1542041485530" expanded="true" signature="2724:2984" ph="{...}" />
+            <marker date="1542041485530" expanded="true" signature="2768:2871" ph="{...}" />
+            <marker date="1542041485530" expanded="true" signature="3043:3396" ph="{...}" />
+            <marker date="1542041485530" expanded="true" signature="3087:3190" ph="{...}" />
+            <marker date="1542041485530" expanded="true" signature="3456:4134" ph="{...}" />
+            <marker date="1542041485530" expanded="true" signature="3500:3871" ph="{...}" />
+            <marker date="1542041485530" expanded="true" signature="4203:4394" ph="{...}" />
+            <marker date="1542041485530" expanded="true" signature="4466:4628" ph="{...}" />
+            <marker date="1542041485530" expanded="true" signature="4707:5645" ph="{...}" />
+            <marker date="1542041485530" expanded="true" signature="4764:5443" ph="{...}" />
+            <marker date="1542041485530" expanded="true" signature="4917:5425" ph="{...}" />
+            <marker date="1542041485530" expanded="true" signature="5726:6467" ph="{...}" />
+            <marker date="1542041485530" expanded="true" signature="5783:6268" ph="{...}" />
+            <marker date="1542041485530" expanded="true" signature="5936:6250" ph="{...}" />
+            <marker date="1542041485530" expanded="true" signature="6542:7865" ph="{...}" />
+            <marker date="1542041485530" expanded="true" signature="6599:7666" ph="{...}" />
+            <marker date="1542041485530" expanded="true" signature="6752:7648" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TicTac.Business.Test/GameDeciderTest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="141" column="34" selection-start-line="141" selection-start-column="34" selection-end-line="141" selection-end-column="34" />
+          <folding>
+            <marker date="1542041476215" expanded="false" signature="6:48" ph="..." />
+            <marker date="1542041476215" expanded="true" signature="81:3999" ph="{...}" />
+            <marker date="1542041476215" expanded="true" signature="116:3997" ph="{...}" />
+            <marker date="1542041476215" expanded="true" signature="180:531" ph="{...}" />
+            <marker date="1542041476215" expanded="true" signature="217:396" ph="{...}" />
+            <marker date="1542041476215" expanded="true" signature="259:382" ph="{...}" />
+            <marker date="1542041476215" expanded="true" signature="592:943" ph="{...}" />
+            <marker date="1542041476215" expanded="true" signature="629:808" ph="{...}" />
+            <marker date="1542041476215" expanded="true" signature="671:794" ph="{...}" />
+            <marker date="1542041476215" expanded="true" signature="1002:1351" ph="{...}" />
+            <marker date="1542041476215" expanded="true" signature="1039:1218" ph="{...}" />
+            <marker date="1542041476215" expanded="true" signature="1081:1204" ph="{...}" />
+            <marker date="1542041476215" expanded="true" signature="1410:1759" ph="{...}" />
+            <marker date="1542041476215" expanded="true" signature="1447:1626" ph="{...}" />
+            <marker date="1542041476215" expanded="true" signature="1489:1612" ph="{...}" />
+            <marker date="1542041476215" expanded="true" signature="1818:2167" ph="{...}" />
+            <marker date="1542041476215" expanded="true" signature="1855:2034" ph="{...}" />
+            <marker date="1542041476215" expanded="true" signature="1897:2020" ph="{...}" />
+            <marker date="1542041476215" expanded="true" signature="2232:2581" ph="{...}" />
+            <marker date="1542041476215" expanded="true" signature="2269:2448" ph="{...}" />
+            <marker date="1542041476215" expanded="true" signature="2311:2434" ph="{...}" />
+            <marker date="1542041476215" expanded="true" signature="2647:2996" ph="{...}" />
+            <marker date="1542041476215" expanded="true" signature="2684:2863" ph="{...}" />
+            <marker date="1542041476215" expanded="true" signature="2726:2849" ph="{...}" />
+            <marker date="1542041476215" expanded="true" signature="3069:3492" ph="{...}" />
+            <marker date="1542041476215" expanded="true" signature="3106:3285" ph="{...}" />
+            <marker date="1542041476215" expanded="true" signature="3148:3271" ph="{...}" />
+            <marker date="1542041476215" expanded="true" signature="3567:3991" ph="{...}" />
+            <marker date="1542041476215" expanded="true" signature="3604:3783" ph="{...}" />
+            <marker date="1542041476215" expanded="true" signature="3646:3769" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TicTac.Business/UserService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <marker date="1542041517797" expanded="false" signature="6:142" ph="..." />
+            <marker date="1542041517797" expanded="true" signature="170:1129" ph="{...}" />
+            <marker date="1542041517797" expanded="true" signature="216:1127" ph="{...}" />
+            <marker date="1542041517797" expanded="true" signature="271:711" ph="{...}" />
+            <marker date="1542041517797" expanded="true" signature="325:701" ph="{...}" />
+            <marker date="1542041517797" expanded="true" signature="447:617" ph="{...}" />
+            <marker date="1542041517797" expanded="true" signature="487:554" ph="{...}" />
+            <marker date="1542041517797" expanded="true" signature="753:905" ph="{...}" />
+            <marker date="1542041517797" expanded="true" signature="807:895" ph="{...}" />
+            <marker date="1542041517797" expanded="true" signature="961:1121" ph="{...}" />
+            <marker date="1542041517797" expanded="true" signature="1015:1111" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TicTac.Business/Class1.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TicTac.Business/GameDecider.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-63">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <marker date="1542041530586" expanded="false" signature="6:44" ph="..." />
+            <marker date="1542041530586" expanded="true" signature="72:1497" ph="{...}" />
+            <marker date="1542041530586" expanded="true" signature="103:1495" ph="{...}" />
+            <marker date="1542041530586" expanded="true" signature="273:418" ph="{...}" />
+            <marker date="1542041530586" expanded="true" signature="466:525" ph="{...}" />
+            <marker date="1542041530586" expanded="true" signature="560:1489" ph="{...}" />
+            <marker date="1542041530586" expanded="true" signature="602:1054" ph="{...}" />
+            <marker date="1542041530586" expanded="true" signature="769:821" ph="{...}" />
+            <marker date="1542041530586" expanded="true" signature="988:1040" ph="{...}" />
+            <marker date="1542041530586" expanded="true" signature="1209:1253" ph="{...}" />
+            <marker date="1542041530586" expanded="true" signature="1408:1452" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TicTac.Website/Hubs/ChatHub.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <marker date="1542043065386" expanded="false" signature="6:162" ph="..." />
+            <marker date="1542043065386" expanded="true" signature="194:1652" ph="{...}" />
+            <marker date="1542043065386" expanded="true" signature="226:343" ph="{...}" />
+            <marker date="1542043065386" expanded="true" signature="376:1650" ph="{...}" />
+            <marker date="1542043065386" expanded="true" signature="558:649" ph="{...}" />
+            <marker date="1542043065386" expanded="true" signature="701:965" ph="{...}" />
+            <marker date="1542043065386" expanded="true" signature="1016:1071" ph="{...}" />
+            <marker date="1542043065386" expanded="true" signature="1143:1416" ph="{...}" />
+            <marker date="1542043065386" expanded="true" signature="1458:1644" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TicTac.Business/BoardService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+          <folding>
+            <marker date="1542041603787" expanded="false" signature="6:147" ph="..." />
+            <marker date="1542041603787" expanded="true" signature="175:4715" ph="{...}" />
+            <marker date="1542041603787" expanded="true" signature="221:4713" ph="{...}" />
+            <marker date="1542041603787" expanded="true" signature="342:399" ph="{...}" />
+            <marker date="1542041603787" expanded="true" signature="464:593" ph="{...}" />
+            <marker date="1542041603787" expanded="true" signature="665:1778" ph="{...}" />
+            <marker date="1542041603787" expanded="true" signature="1436:1597" ph="{...}" />
+            <marker date="1542041603787" expanded="true" signature="1825:1996" ph="{...}" />
+            <marker date="1542041603787" expanded="true" signature="2080:2962" ph="{...}" />
+            <marker date="1542041603787" expanded="true" signature="2275:2925" ph="{...}" />
+            <marker date="1542041603787" expanded="true" signature="2483:2608" ph="{...}" />
+            <marker date="1542041603787" expanded="true" signature="2653:2877" ph="{...}" />
+            <marker date="1542041603787" expanded="true" signature="3019:3853" ph="{...}" />
+            <marker date="1542041603787" expanded="true" signature="3254:3526" ph="{...}" />
+            <marker date="1542041603787" expanded="true" signature="3356:3512" ph="{...}" />
+            <marker date="1542041603787" expanded="true" signature="3578:3811" ph="{...}" />
+            <marker date="1542041603787" expanded="true" signature="3902:4263" ph="{...}" />
+            <marker date="1542041603787" expanded="true" signature="3984:4227" ph="{...}" />
+            <marker date="1542041603787" expanded="true" signature="4313:4707" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TicTac.DataAccess/GameRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="42" column="40" lean-forward="true" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
+          <folding>
+            <marker date="1542043345294" expanded="false" signature="6:193" ph="..." />
+            <marker date="1542043345294" expanded="true" signature="223:2712" ph="{...}" />
+            <marker date="1542043345294" expanded="true" signature="275:2710" ph="{...}" />
+            <marker date="1542043345294" expanded="true" signature="384:435" ph="{...}" />
+            <marker date="1542043345294" expanded="true" signature="498:1373" ph="{...}" />
+            <marker date="1542043345294" expanded="true" signature="968:1147" ph="{...}" />
+            <marker date="1542043345294" expanded="true" signature="1411:2051" ph="{...}" />
+            <marker date="1542043345294" expanded="true" signature="2093:2188" ph="{...}" />
+            <marker date="1542043345294" expanded="true" signature="2268:2704" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TicTac.Website/Controllers/GameController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="62" column="70" lean-forward="true" selection-start-line="62" selection-start-column="70" selection-end-line="62" selection-end-column="70" />
+          <folding>
+            <marker date="1542042664477" expanded="false" signature="6:281" ph="..." />
+            <marker date="1542042664477" expanded="true" signature="320:2950" ph="{...}" />
+            <marker date="1542042664477" expanded="true" signature="403:2948" ph="{...}" />
+            <marker date="1542042664477" expanded="true" signature="606:695" ph="{...}" />
+            <marker date="1542042664477" expanded="true" signature="792:912" ph="{...}" />
+            <marker date="1542042664477" expanded="true" signature="981:1073" ph="{...}" />
+            <marker date="1542042664477" expanded="true" signature="1179:1889" ph="{...}" />
+            <marker date="1542042664477" expanded="true" signature="1416:1501" ph="{...}" />
+            <marker date="1542042664477" expanded="true" signature="1534:1600" ph="{...}" />
+            <marker date="1542042664477" expanded="true" signature="2015:2471" ph="{...}" />
+            <marker date="1542042664477" expanded="true" signature="2142:2246" ph="{...}" />
+            <marker date="1542042664477" expanded="true" signature="2580:2942" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
